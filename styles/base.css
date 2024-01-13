@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@200&family=Pridi:wght@300&family=Rock+Salt&display=swap');
+
+body {
+    font-family: 'Livvic', sans-serif;
+    line-height: 1.6;
+    color: #333; 
+    background-color: #f0f0f0; 
+}
+
+header {
+    background-color: #6a1b9a; 
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    display: inline-block; 
+    vertical-align: middle; 
+    border-radius:10%; 
+}
+
+header h1 {
+    display: inline-block;
+    color: #fff; 
+    margin-left: 10px;
+    font-family: 'Rock Salt', cursive;
+}
+
+
+nav {
+    background-color: #39045a; 
+    text-align: center; 
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 10px; 
+}
+
+
+nav a {
+    text-decoration: none; 
+    color: #fff; 
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto; 
+    display: grid;
+    grid-gap: 20px;
+}
+
+.card {
+    /* Estilos de las tarjetas */
+    padding: 20px;
+    background-color: #fff; /* Color de fondo de las tarjetas */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color:#39045a; /* Color de fondo del pie de página */
+    color: #fff; /* Color del texto del pie de página */
+    margin-top: 20px;
+}
