@@ -3,10 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let firstParagraph = document.getElementById("footerFirstParagraph");
 
     let decoratedName = "🌟 Carol Nacher 🌟";
-    let uruguayFlag = "Uruguay";
-    let uruguayFlagImage = `<img src="images/flag.png" alt="Flag of Uruguay" width="95" height="75"style="vertical-align: middle;">`;
+      
 
-    firstParagraph.innerHTML = `&copy; ${currentYear} ${decoratedName} -  ${uruguayFlag} ${uruguayFlagImage}`;
+    firstParagraph.innerHTML = `&copy; ${currentYear} ${decoratedName} `;
 
     let lastModifiedParagraph = document.getElementById("lastModified");
     lastModifiedParagraph.innerHTML = "Última modificación: " + document.lastModified;
