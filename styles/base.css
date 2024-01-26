@@ -11,7 +11,7 @@ body {
 header {
     background-color: rgb(87, 1, 115); 
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 }
 
 header img {
@@ -44,7 +44,7 @@ h3 {
 nav a {
     text-decoration: none; 
     color: #030c03;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 700; 
 }
 #menu {
@@ -68,7 +68,7 @@ main {
 .card {
    
     padding: 20px;
-    background-color: #f9a5e5; 
+    background-color: #f7cfed; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
@@ -92,7 +92,7 @@ footer {
     padding: 20px;
 }
 .navigation a:hover::before{
-    background-color:#f5d8ee;
+    background-color:#f7bce9;
 	color: #333;
 	font-weight: 700;
 }
