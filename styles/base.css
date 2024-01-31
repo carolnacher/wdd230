@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito+Sans:opsz@6..12&display=swap');
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 25px;
     line-height: 1.6;
     color: #333; 
-    background-color: #f0f0f0; 
+    background-color:#EEF0E5; 
 }
 
 header {
-    background-color: rgb(87, 1, 115); 
+    background-color:#163020; 
     text-align: center;
     padding: 25px;
 }
@@ -24,7 +24,7 @@ header h1 {
     display: inline-block;
     color: #fff; 
     margin-left: 10px;
-    font-family: 'Pridi', cursive;
+    font-family: 'Dancing Script', cursive;
     font-size: 50px;
    
 }
@@ -43,7 +43,7 @@ h3 {
 
 nav a {
     text-decoration: none; 
-    color: #030c03;
+    color:#EEF0E5;
     font-size: 35px;
     font-weight: 700; 
 }
@@ -51,7 +51,7 @@ nav a {
     font-size: 1.5rem;
     border: 0;
     background: none;
-    color: #000;
+    color: white;
     position: absolute;
     
     left: 1rem;
@@ -68,7 +68,7 @@ main {
 .card {
    
     padding: 20px;
-    background-color:  #f8e0f2; 
+    background-color: #B6C4B6; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
@@ -81,12 +81,12 @@ ul li a{
 footer {
     text-align: center;
     padding: 10px;
-    background-color: rgb(87, 1, 115); 
+    background-color: #163020; 
     color: #fff; 
     margin-top: 50px;
 }
 .navigation a:hover {
-    background-color: rgb(87, 1, 115);
+    background-color:#163020;
     color: #f0f0f0;
     font-weight: 700;
     border-radius: 4px;
@@ -103,12 +103,15 @@ footer {
     display: block;
 }
 
-#menu::before {
+
+button #menu::before {
     content: "☰";
+    color: #163020
 }
 
 #menu.open::before {
     content: "⌵";
+    color:#EEF0E5;
 }
 main {
         
@@ -129,7 +132,7 @@ iframe{
     
 
 .navigation.open  {
-    background-color: #f9a5e5; 
+    background-color: #304D30; 
     text-align: center; 
     padding: 20px;
     align-items: center;
