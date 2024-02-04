@@ -106,7 +106,7 @@ footer {
 
 button #menu::before {
     content: "☰";
-    color: #163020
+    color: #163020;
 }
 
 #menu.open::before {

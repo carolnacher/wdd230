@@ -1,0 +1,130 @@
+@media (max-width: 639px) {
+
+
+    .navigation.open {
+
+        background-color: #002400;
+        display: flex;
+        align-items: right;
+        float: right;
+        max-height: 500px;
+        border-radius: 4px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        font-size: 20px;
+
+    }
+    header{
+        display: inline-block;
+    }
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+        text-align: center;
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: var(--heading-font);
+        padding: 10px;
+        color: #DBD2E0;
+        font-size: 20px;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    h2 {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 900;
+        color: #002400;
+
+    }
+    #menu::before {
+        content: "☰";
+        
+    }
+    
+    #menu.open::before {
+        content: "✖";
+    }
+
+    #menu {
+        
+       
+       
+        background: none;
+        display: inline;
+
+    }
+
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+
+    }
+
+    section {
+        grid-column: 1;
+    }
+    .button-box{
+        align-items: center;
+        border: 0px;
+    }
+    section:nth-child(2),
+    section:nth-child(3) {
+        grid-column: 1;
+    }
+
+    section:nth-child(2) {
+        display: grid;
+    }
+
+    .card {
+
+        padding: 20px;
+        background-color: #B6C4B6;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+
+    }
+
+    footer {
+        background-color: #002400;
+        color: #DBD2E0;
+        padding: 10px 5px;
+        min-height: 50px;
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer P {
+        font-size: 15px;
+    }
+
+    footer .social img {
+        padding: 10px 10px;
+        padding-bottom: 0;
+        width: 50px;
+
+    }
+
+    .text {
+        display: none;
+    }
+}
