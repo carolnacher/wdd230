@@ -14,18 +14,25 @@
 
     }
     header{
-        display: inline-block;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header-content {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        justify-content: space-between;
     }
     nav ul {
         display: flex;
         list-style-type: none;
         flex-direction: column;
+        width: 100%; 
+        text-align: center; 
     }
-
     nav ul li {
-        flex: 1 1 100%;
-        text-align: center;
         width: 100%;
+        margin-bottom: 10px; 
     }
 
     a {
@@ -41,6 +48,8 @@
 
     .navigation {
         display: none;
+        order: 2;
+        width: 100%;
     }
 
     h2 {
@@ -50,22 +59,44 @@
         color: #002400;
 
     }
+    h1 {
+        order: 3;
+        margin-left: 10px;
+    }
+    .navigation li a.active {
+        display: inline-block;
+        color: #F6E8EA;
+        background-color: #273B09;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .navigation a:hover {
+
+        display: inline-block;
+        color: #F6E8EA;
+        background-color: #273B09;
+        border-radius: 4px;
+         z-index: 1;
+    
+    }
+
     #menu::before {
         content: "☰";
-        
+        color: #DBD2E0;
     }
     
     #menu.open::before {
         content: "✖";
+        color: #DBD2E0;
     }
 
     #menu {
-        
-       
-       
         background: none;
-        display: inline;
-
+        display: inline-block;
+        order: 3
+    }
+    #menu.open ~ .navigation {
+        display: flex;
     }
 
     main {
