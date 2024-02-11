@@ -17,17 +17,16 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/medium.css">
   <link rel="stylesheet" href="styles/large.css">
-  <link rel="icon" href="favicon (1).ico">
+  <link rel="icon" href="favicon(1).ico">
   <title> Montevideo - Chamber of Commerce </title>
 </head>
 
 <body>
   <div id="content">
     <header>
-      <b href="index.html" id="logo_link">
-        <img class="logo" src="images/Montevideo.jpg" alt="HealthyBites logo">
+      <b><a href="index.html" id="logo_link"></a>
+        <img class="logo" src="images/Montevideo.webp" alt="HealthyBites logo">
       </b>
-      
       <nav class="navigation">
         <ul>
           <li><a href="index.html"> Home</a></li>
@@ -36,13 +35,18 @@
           <li><a href="#"> Page 3 </a></li>
         </ul>
       </nav>
+     
       <button id="menu" aria-label="button Menu"></button>
     </header>
+    <label for="darkModeToggle" class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider round"></span>
+    </label>
     <h1> Montevideo - Chamber of Commerce </h1>
     <div class="slider-box">
       <ul>
         <li>
-          <img src="images/slide1.jpg" alt="">
+          <img src="images/slide1.webp" alt="">
           <div class="text">
             <h2>Economic Stimulus and Growth</h2>
             <p>
@@ -54,7 +58,7 @@
           </div>
         </li>
         <li>
-          <img src="images/slide2.jpg" alt="">
+          <img src="images/monte.webp" alt="">
           <div class="text">
             <h2> Diversification of Products and Services</h2>
             <p>
@@ -67,7 +71,7 @@
           </div>
         </li>
         <li>
-          <img src="images/slide3.jpg" alt="">
+          <img src="images/slide3.webp" alt="">
           <div class="text">
             <h2>Job Creation:</h2>
             <p>
@@ -79,7 +83,7 @@
           </div>
         </li>
         <li>
-          <img src="images/slide4.jpg" alt="">
+          <img src="images/slide4.webp" alt="">
           <div class="text">
             <h2>Infrastructure Development and Connectivity</h2>
             <p>
@@ -94,22 +98,14 @@
       </ul>
 
     </div>
+    <button id="Join" aria-label="button join"></button>
     <h2>External links to the Government Chamber of Commerce of Uruguay</h2>
     <main>
 
       <section class="responsive">
         <div class="gallery">
           <a target="_blank" href="">
-            <img src="images/company.jpg" alt="company 'spotlights' advertisements">
-          </a>
-          <div class="desc">company advertisements</div>
-        </div>
-      </section>
-
-      <section class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="">
-            <img src="images/whather.jpg" alt="EOY">
+            <img src="images/whather.webp" alt="EOY">
           </a>
           <div class="desc">whather</div>
         </div>
@@ -118,11 +114,36 @@
       <section class="responsive">
         <div class="gallery">
           <a target="_blank" href="">
-            <img src="images/event1.jpg" alt="Last balance">
+            <img src="images/company.webp" alt="company 'spotlights' advertisements">
           </a>
-          <div class="desc">Current events</div>
+          <div class="desc">company advertisements</div>
         </div>
       </section>
+
+      <section class="responsive">
+        <div class="box" id="Contact-one">
+          <img src="images/fletes.webp" alt="logo-transport">
+          <p>+589 95 463 177</p>
+          <p>+589 2356 1836</p>
+          <p>Bvar José Batlle y Ordóñez 7139</p>
+          <a href="https://fletes-uruguay.com/?gclid=CjwKCAiAt5euBhB9EiwAdkXWOwoma2USFIeN4AXJHclRuWAGLcu4NoXj5hlb0JzqEwUjShMmnBKo7xoCHSMQAvD_BwE" class="info-button">+ Info</a>
+        </div>
+        <div class="box" id="contact-two">
+          <img src="images/contuction.jpg" alt="logo-contruct">
+          <p>ventas@gonzalezconde.com.uy</p>
+          <p>fax +598 2509 2509</p>
+          <p>Av. 8 de Octubre 4489</p>
+          <a href="https://www.gonzalezconde.com.uy/contacto/" class="info-button">+ Info</a>
+        </div>
+        <div class="box" id="Contact-three">
+          <img src="images/travel.webp" alt="logo-travel">
+          <p>ventas@tiendaviajes.com.uy</p>
+          <p>+598 2904 04 15</p>
+          <p> Av. Italia 5820</p>
+          <a href="https://www.gonzalezconde.com.uy/contacto/" class="info-button">+ Info</a>
+        </div>
+      </section>  
+      
 
     </main>
 
@@ -131,13 +152,13 @@
       <p id="lastModified"></p>
       <div class="social">
         <a href="https://facebook.com" target="_blank">
-          <img src="images/face1.png" alt="fb icon">
+          <img src="images/face1.webp" alt="fb icon">
         </a>
         <a href="https://instagram.com" target="_blank">
-          <img src="images/insta.png" alt="instagram icon"  width="25" height="25">
+          <img src="images/insta.webp" alt="instagram icon"  width="25" height="25">
         </a>
         <a href="https://googlemaps.com" target="_blank">
-          <img src="images/ubica.png" alt="Location icon" width="25" height="25">
+          <img src="images/ubication.webp" alt="Location icon" width="25" height="25">
         </a>
       </div>
     </footer>

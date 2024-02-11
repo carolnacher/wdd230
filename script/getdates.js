@@ -17,5 +17,5 @@ document.addEventListener("DOMContentLoaded", function () {
     hamButton.addEventListener('click', () => {
         navigation.classList.toggle('open');
         hamButton.classList.toggle('open');
-    });  // <- Aquí estaba faltando el punto y coma
+    });  
 });

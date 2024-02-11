@@ -93,13 +93,13 @@ a {
 img.logo {
     max-height: 90px;
     background-color: #22181C;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .slider-box {
     width: auto;
-    margin: 50px auto 50px;
+    margin: 50px 25px 50px;
     overflow: hidden;
     border-radius: 20px;
 }
@@ -109,7 +109,7 @@ img.logo {
     padding: 0;
     width: 400%;
     animation: slide 20s infinite alternate ease-in-out;
-
+    border-radius: 20px;
 }
 
 .slider-box li {
@@ -233,8 +233,6 @@ h2 {
     font-family: var(--heading-font);
     text-align: center;
     font-weight: 900;
-    color:#7B904B;
-    
 }
 
 
@@ -279,6 +277,7 @@ div.desc {
     border-radius: 4px;
     z-index: 1;
     width: 150px;
+    border: 1px solid #002400;
 }
 
 .desc {
@@ -293,7 +292,7 @@ div.desc {
     font-size: 15px;
     max-width: 500px;
     color:#080808;
-
+    border: 1px solid #002400;
 
 }
 
@@ -311,9 +310,10 @@ div.gallery:hover {
 }
 main {   
     grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr ;
     grid-gap: 32px;  
 }
-section:nth-child(2) {
+section:nth-child(1) {
     display: block;
 }
 section:nth-child(3) {
@@ -332,4 +332,117 @@ section.responsive{
 }
 h2{
     padding: 20px;
+    
 }
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 350px;
+    background:#B6C4B6;
+    box-shadow: 0 6px 10px #002400;
+    color: #002400;
+    text-align: center;
+    border-radius: 8px;
+}
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box p {
+    margin: 5px 0;
+}
+.info-button {
+    font-family: var(--paragraph-font);
+    background-color: #DBD2E0;
+    color: #002400;
+    border: 1px solid #002400;
+    padding: 8px;
+    cursor: pointer;
+    margin-top: 10px; 
+    border-radius: 8px;
+    width: 50px;
+    height: 15px;
+    font-size: 15px;
+}
+.box p{
+    color:#19075a;
+    font-weight: 500;
+    font-family: var(--paragraph-font);
+}
+/*dark mode*/
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 26px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    right: -10px;
+    bottom: -10px;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 26px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  body {
+    /* Estilos para el modo claro (por defecto) */
+    background: #eee;
+    color: #000;
+  }
+  
+  body.dark-mode {
+    /* Estilos para el modo oscuro */
+    background: #000;
+    color: #fff;
+  }  

@@ -56,8 +56,6 @@
         font-size: 30px;
         text-align: center;
         font-weight: 900;
-        color: #002400;
-
     }
     h1 {
         order: 3;
@@ -157,5 +155,12 @@
 
     .text {
         display: none;
+    }
+    .box {
+        width: auto;
+    }
+    main .responsive {
+        flex-direction: column; 
+        align-items: center; 
     }
 }
