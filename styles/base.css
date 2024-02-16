@@ -114,16 +114,12 @@ button #menu::before {
     color:#EEF0E5;
 }
 main {
-        
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 32px;  
+
+    margin: 0 auto;
+    display: inline;
+    grid-gap: 20px;
 }
-section:nth-child(2) {
-    display: block;
-}
-section:nth-child(3) {
-    grid-column: span 2;
-}
+
 iframe{
     width: 100%;
     height: 60vh;    
@@ -142,6 +138,37 @@ iframe{
 }
 .navigation{
     display: none;
+}
+.hero {
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .1);
+    grid-column: span 2;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.herolabel {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: "Great Vibes", serif;
 }
 
 }

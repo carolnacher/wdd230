@@ -23,9 +23,9 @@
     <img
     src="Images/me.jpeg"
     alt="Picture-Carol"
-    width="450"
-    height="489"
-    srcset="Images/me.jpeg 900w, Images/me.jpeg 1350w, Images/me.jpeg 1800w"
+    width="225"
+    height="248"
+    srcset="Images/me.jpeg 639w, Images/me.jpeg 1000w, Images/me.jpeg 1800w"
     sizes="(max-width: 639px) 450px, (max-width: 1080px) 675px, 1080px"
 >
 
@@ -38,16 +38,25 @@
         <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
         <li><a href="chamber/">Chamber</a></li>
         <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
-        <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
-        <li><a href="images/landscape.webp" target="_blank">webp</a></li>
-        <li><a href="lesson6/responsive-images.html" target="_blank">Respinsive Image</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li> 
     </ul>
 </nav>
 
-<h2>WDD 230: Web Frontend Development</h2>
+
 
 <main>
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
+            <img src="images/temple.webp" alt="temple picture" width="1278" height="800">
+        </picture>
+        <div class="herolabel">
+            <p>Montevideo Temple</p>
+        </div>
+    </div> 
     
+    <h2>WDD 230: Web Frontend Development</h2>   
 
     <section class="card">
         <h3>Learning Activities</h3>
@@ -59,6 +68,8 @@
             <li><a href="https://codepen.io/Carol-Elizabeth-Nacher-Pifano/pen/zYbPxOj" target="_blank">Responsive Navigation</a></li>
             <li><a href="https://codepen.io/Carol-Elizabeth-Nacher-Pifano/pen/GReQyoz" target="_blank">CSS Pseudo-Classes</a></li>
             <li><a href="lesson05/bom.html" target="_blank">The Book of Mormon favorite Chapter</a></li>
+            <li><a href="images/landscape.webp" target="_blank">webp</a></li>
+            <li><a href="lesson6/responsive-images.html" target="_blank">Respinsive Image</a></li>
         </ul>
     </section>
 
