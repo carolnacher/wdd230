@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const darkModeToggle = document.querySelector('#darkModeToggle');
+    const darkModeToggle = document.querySelector('#mode');
     const body = document.querySelector('#content');
 
     darkModeToggle.addEventListener('change', function() {
