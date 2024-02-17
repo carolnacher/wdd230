@@ -40,7 +40,7 @@
         font-family: var(--heading-font);
         padding: 10px;
         color: #DBD2E0;
-        font-size: 20px;
+        font-size: px;
         text-align: center;
         flex-direction: column;
 
@@ -74,28 +74,30 @@
         color: #F6E8EA;
         background-color: #273B09;
         border-radius: 4px;
-         z-index: 1;
+        z-index: 1;
     
     }
 
     #menu::before {
         content: "☰";
-        color: #DBD2E0;
+        color:#002400;
+     
     }
     
     #menu.open::before {
         content: "✖";
-        color: #DBD2E0;
+        color:#002400;
+        
     }
 
     #menu {
+        margin-top: 15px;
+        margin-left: 280px;
         background: none;
-        display: inline-block;
-        order: 3
+        display: inline;
+        
     }
-    #menu.open ~ .navigation {
-        display: flex;
-    }
+   
 
     main {
         max-width: 800px;
