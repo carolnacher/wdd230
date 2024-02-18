@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="styles/medium.css">
   <link rel="stylesheet" href="styles/large.css">
   <link rel="icon" href="favicon(1).ico">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
   <title> Montevideo - Chamber of Commerce </title>
 </head>
 
@@ -55,11 +56,16 @@
       
       <section class="responsive">
         <div class="gallery">
-          <a target="_blank" href="">
-            <img src="images/whather.webp" alt="EOY">
-          </a>
-          <div class="desc">whather</div>
-        </div>
+          <h2>Weather information</h2>
+          <button id="submitBtn">Get Weather</button>
+          <div id="weatherInfo"></div>
+          <div id="windchill"></div>
+          
+          <h2>Map</h2>
+          <div id="map">
+              <img id="photo1" src="images/map-placeholder.webp" alt="Placeholder Image">
+          </div>
+        </div>  
       </section>
 
       <section class="responsive">
@@ -104,6 +110,7 @@
     </footer>
     <script src="script/getdates.js"></script>
     <script src="script/darkmode.js"></script>
+    <script src="script/windchill.js" defer></script>
   </div>
 </body>
 
