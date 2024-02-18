@@ -24,6 +24,7 @@
     box-sizing: border-box;
     background-blend-mode: color;
     background:#F6E8EA
+    
 }
 
 nav ul {
@@ -140,7 +141,6 @@ img.logo {
 
 .slider-box img {
     width: 100%;
-
 }
 
 @keyframes slide {
@@ -188,12 +188,23 @@ img.logo {
 
 
 }
-
 main {
-    margin: 0 auto; 
+    margin: 0 auto;
+    max-width: 1278px; /* Ajusta según tu diseño */
     display: grid;
     grid-gap: 20px;
-}
+    padding: 20px; /* Añade espacio interno alrededor del contenido */
+  }
+  .section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  section {
+    width: 100%; /* Asegura que las secciones ocupen el ancho completo */
+    box-sizing: border-box;
+  }
 
 footer .social img {
     padding: 25px 10px;
@@ -235,6 +246,9 @@ h2 {
     font-weight: 900;
 }
 
+.logo{
+    margin-top: 10px;
+}
 
 #logo_link {
   z-index: 1;
@@ -327,9 +341,7 @@ section:nth-child(3) {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
 }
-section.responsive{
-    margin: 4%;
-}
+
 h2{
     padding: 20px;
     
@@ -445,4 +457,21 @@ h2{
     background: #000;
     color: #fff;
   }  
+  
+  .hero {
+    width: 100%;
+   
+    height: auto;
+    overflow: hidden;
+     }
+
+.hero img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
   
