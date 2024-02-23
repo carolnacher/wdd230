@@ -120,6 +120,12 @@ main {
     grid-gap: 20px;
 }
 
+iframe {
+    width: 100%;
+    height: 60vh;
+    border-radius: 8px;
+
+}
 
 #visits {
 	color: navy;
