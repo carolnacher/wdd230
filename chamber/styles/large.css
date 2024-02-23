@@ -80,19 +80,19 @@
 
     #menu::before {
         content: "☰";
-        color:#002400;
+   
      
     }
     
     #menu.open::before {
         content: "✖";
-        color:#002400;
+        
         
     }
 
     #menu {
         margin-top: 15px;
-        margin-left: 280px;
+        margin-left: 265px;
         background: none;
         display: inline;
         

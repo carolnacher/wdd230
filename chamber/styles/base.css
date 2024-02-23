@@ -190,10 +190,10 @@ img.logo {
 }
 main {
     margin: 0 auto;
-    max-width: 1278px; /* Ajusta según tu diseño */
+    max-width: 1278px; 
     display: grid;
     grid-gap: 20px;
-    padding: 20px; /* Añade espacio interno alrededor del contenido */
+    padding: 20px; 
   }
   .section-container {
     display: grid;
@@ -202,7 +202,7 @@ main {
   }
   
   section {
-    width: 100%; /* Asegura que las secciones ocupen el ancho completo */
+    width: 100%; 
     box-sizing: border-box;
   }
 
@@ -235,17 +235,22 @@ footer P {
     z-index: 1;
     grid-row: 1/2;
     grid-column: 1/4;
-    color: #DBD2E0;
+    color: #fffeff;
 
 }
-
+div#weatherInfo{
+color:#fcfcfc;
+}
 h2 {
     font-size: 35px;
     font-family: var(--heading-font);
     text-align: center;
     font-weight: 900;
+   
 }
-
+.gallery h2{
+    color:#DBD2E0;
+}
 .logo{
     margin-top: 10px;
 }
@@ -284,6 +289,7 @@ div.gallery img {
 
 div.gallery{
     padding: 10px;
+    background-color: #273B09;
 }
 div.desc {
     padding: 10px;
@@ -388,18 +394,33 @@ h2{
 .mapboxgl-control-container{
     display: none;
 }
-
+.social-media img {
+    width: 40px; /* Establece el ancho deseado */
+    height: 39px; /* Establece la altura deseada */
+    max-width: 100%; /* Hace que la imagen sea responsiva */
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+  .social-media {
+    display: flex; /* Hace que los elementos dentro del div se distribuyan en línea */
+    align-items: center; /* Centra verticalmente los elementos */
+  }
+  
+  .social-media h3 {
+    margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+  }
+  
+  .social-media a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+  }
 
 /*dark mode*/
 
 .switch {
-    position: absolute;
-    margin-right: 40px;
-    display: inline-block;
+    position:absolute;
     width: 55px;
     height: 26px;
-	top: 0.5rem;
-	right: -1rem;
+    right: 30px; 
   }
   
 
@@ -417,7 +438,7 @@ h2{
     left: 10px;
     right: -10px;
     bottom: -10px;
-    background-color: #ccc;
+    background-color: #002400;
     transition: 0.4s;
     border-radius: 26px;
   }
@@ -495,5 +516,15 @@ h2{
 }
 .mapboxgl-ctrl-attrib-inne {
     display: none;
+}
+body.dark-mode #menu::before, 
+body.dark-mode #menu::after {
+  background-color: #000; 
+}
+
+
+#menu::before, 
+#menu::after {
+  background-color: #02b735; 
 }
   
