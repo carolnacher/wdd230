@@ -7,9 +7,5 @@ document.addEventListener("DOMContentLoaded", function () {
     let uruguayFlagImage = `<img src="images/flag.png" alt="Flag of Uruguay" width="200" height="200" style="vertical-align: middle;">`;
 
     firstParagraph.innerHTML = `&copy; ${currentYear} ${decoratedName} -  ${uruguayFlag} ${uruguayFlagImage}`;
-
-    let lastModifiedParagraph = document.getElementById("lastModified");
-    lastModifiedParagraph.innerHTML = "Última modificación: " + document.lastModified;
-
-    
+   
 });

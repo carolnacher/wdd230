@@ -385,6 +385,11 @@ h2{
     font-weight: 500;
     font-family: var(--paragraph-font);
 }
+.mapboxgl-control-container{
+    display: none;
+}
+
+
 /*dark mode*/
 
 .switch {

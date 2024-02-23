@@ -124,6 +124,11 @@ iframe{
     width: 100%;
     height: 60vh;    
 }
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
 @media  (max-width: 639px){
     
 
