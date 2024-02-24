@@ -330,7 +330,6 @@ div.gallery:hover {
 }
 main {   
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:1fr 1fr ;
     grid-gap: 32px;  
 }
 section:nth-child(1) {
@@ -395,24 +394,91 @@ h2{
     display: none;
 }
 .social-media img {
-    width: 40px; /* Establece el ancho deseado */
-    height: 39px; /* Establece la altura deseada */
-    max-width: 100%; /* Hace que la imagen sea responsiva */
-    height: auto; /* Ajusta la altura automáticamente */
+    width: 40px; 
+    height: 39px; 
+    max-width: 100%; 
+    height: auto; 
   }
   .social-media {
-    display: flex; /* Hace que los elementos dentro del div se distribuyan en línea */
-    align-items: center; /* Centra verticalmente los elementos */
+    display: flex; 
+    align-items: center; 
   }
   
   .social-media h3 {
-    margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+    margin-right: 10px; 
   }
   
   .social-media a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+    text-decoration: none; 
+    margin-right: 10px; 
   }
+
+  /*Lazy images*/
+
+  img{
+    
+    background-color: black;
+    animation: fade 10s;
+
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color:black; 
+    color: #fff; 
+    margin-top: 50px;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*page discover*/
+
+.Info {
+    position: relative;
+    padding: 20px;
+    background-color: #B6C4B6; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  .Info img {
+    float: left;
+    margin-right: 20px;  
+    height: auto; 
+  }
+  
+  .Info p {
+    margin-top: 0; 
+    font-size: 15px;
+  }
+  main.page-discover {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+  }
+  .saturate {
+    filter: saturate(50%);
+  }
+  #calendario {
+    position: relative;
+    width: 100%; 
+    height: auto; 
+  }
+
+  #calendario img {
+    width: 100%;
+    height: auto; 
+    display: block; 
+  }
+ 
 
 /*dark mode*/
 

@@ -165,5 +165,9 @@
         flex-direction: column; 
         align-items: center; 
     }
-    
+    /*discover-page*/
+
+    .saturate  {
+        filter: none; 
+      }
 }

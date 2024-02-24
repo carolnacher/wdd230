@@ -1,97 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 230, Carol Nacher, This page focuses on my planning, design, and development of responsive websites using HTML, CSS, and JavaScript">
-    <meta name="author" content="Carol Nacher">
-    <meta property="og:title" content="Carol Nacher Home page" />
-    <meta property="og:type" content="web page" />
-    <meta property="og:url" content="https://carolnacher.github.io/wdd230/" />
-    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/2/28/Collage_Landmarks_of_Montevideo.jpg" />
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <link rel="icon" href="favicon.ico">
-
-
-    <title> Carol Nacher - WDD 230 - Web Frontend Development</title>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Unlock business opportunities and networking in Montevideo with the local Chamber of Commerce. We drive business growth, foster collaboration, and provide essential resources for your company's success in the lively Uruguayan capital. Join us to expand your network and explore new business possibilities in Montevideo.">
+  <meta name="author" content="Carol Nacher">
+  <meta property="og:title" content="Home Page - Montevideo Chamber of Commerce" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://carolnacher.github.io/wdd230/" />
+  <meta property="og:image"
+    content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/The_City_%28198895997%29_%28cropped%29.jpg/288px-The_City_%28198895997%29_%28cropped%29.jpg" />
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link rel="icon" href="favicon(1).ico">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+  
+  <title> Montevideo - Chamber of Commerce </title>
 </head>
+
 <body>
-<header>
-    <img
-    src="images/me.jpeg"
-    alt="Picture-Carol"
-    width="225"
-    height="248"
-    srcset="images/me.jpeg 639w, images/me.jpeg 1000w, images/me.jpeg 1800w"
-    sizes="(max-width: 639px) 450px, (max-width: 1080px) 675px, 1080px"
->
-
-    <h1>Carol Nacher</h1>
-</header>
-<button id="menu" aria-label="button Menu"></button>
-<nav class="navigation">
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
-        <li><a href="chamber/">Chamber</a></li>
-        <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
-        <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li> 
-    </ul>
-</nav>
-
-
-
-<main>
-    <div class="hero">
-        <picture>
-            <source srcset="images/hero-small.webp" media="(max-width: 400px)">
-            <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
-            <img src="images/temple.webp" alt="temple picture" width="1278" height="800">
-        </picture>
-        <div class="herolabel">
-            <p>Montevideo Temple</p>
-        </div>
-    </div> 
-    
-    <h2>WDD 230: Web Frontend Development</h2>   
-
-    <section class="card">
-        <h3>Learning Activities</h3>
+  <div id="content">
+    <header>
+      <b><a href="index.html" id="logo-montevideo"></a>
+        <img class="logo" src="images/Montevideo.webp" alt="HealthyBites logo">
+      </b>
+      <nav class="navigation">
         <ul>
-            <li><a href="lesson01/media-query.html">Lesson 01</a></li>
-            <li><a href="lesson02/design-principles.html">lesson 02</a></li>
-            <li><a href="images/combinator.jpg" target="_blank">Combinator</a></li>
-            <li><a href="https://codepen.io/Carol-Elizabeth-Nacher-Pifano/pen/Babmaab" target="_blank">Pseudo-elements</a></li>
-            <li><a href="https://codepen.io/Carol-Elizabeth-Nacher-Pifano/pen/zYbPxOj" target="_blank">Responsive Navigation</a></li>
-            <li><a href="https://codepen.io/Carol-Elizabeth-Nacher-Pifano/pen/GReQyoz" target="_blank">CSS Pseudo-Classes</a></li>
-            <li><a href="lesson05/bom.html" target="_blank">The Book of Mormon favorite Chapter</a></li>
-            <li><a href="images/landscape.webp" target="_blank">webp</a></li>
-            <li><a href="lesson6/responsive-images.html" target="_blank">Respinsive Image</a></li>
-            <li><a href="leccion07/lazyload.html" target="_blank">lazyload Image</a></li>
-            <li><a href="bom/bom.html" target="_blank">BOM</a></li>
+          <li><a href="index.html"> Home</a></li>
+          <li><a href="#"> Page 2 </a></li>
+          <li><a href="#"> Page 3 </a></li>
         </ul>
-    </section>
+      </nav>
+    </header>
+    <button id="menu" aria-label="button Menu"></button>
+    <label for="mode" class="switch">
+      <input type="checkbox" id="mode">
+      <span class="slider round"></span>
+    </label>
+    <h1> Montevideo - Chamber of Commerce </h1>
+    <div class="hero">
+      <picture>
+          <source srcset="images/smallmont.webp" media="(max-width: 400px)">
+          <source srcset="images/mediummont.webp" media="(max-width: 686px)">
+          <img src="images/monte.webp" alt="temple picture" width="1278" height="800">
+      </picture>
+    </div> 
+    <button id="Join" aria-label="button Join"></button>
+    <main class="page-discover">
+       
+        <section class="data">
+            <div class="Info" id="Contry-info">
+             
+              <p>Uruguay, located in South America, has an area of ​​176,220 km2.
 
-    <section class="card">
-        <h3>Information</h3>
-        <p>Weather: [Placeholder]</p>
-        <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
-    </section>
+                Uruguay, with a population of 3,426,260 people, is in position 134 in the population table, made up of 196 countries and maintains a very low population density, 19 inhabitants per km2.
+                
+                Its capital is Montevideo and its currency is Uruguayan pesos.</p>
+                
+                <img src="images/contry.png" class="saturate" alt="contry" width="200" height="200">
+                
+                <p>Uruguay is the 82nd economy by GDP volume. Its public debt in 2022 was 40,058 million euros, with a debt of 59.31% of GDP. Its per capita debt is €11,691 euros per inhabitant.
+                
+                The last annual variation rate of the CPI published in Uruguay is from January 2024 and was 5.1%.
+                
+                There are some variables that can help you learn more if you are traveling to Uruguay or simply want to know more about the standard of living of its inhabitants.
+                
+                GDP per capita is a very good indicator of the standard of living and in the case of Uruguay, in 2022, it was €19,712 euros, which is why it is in 49th place out of the 196 countries in the GDP per capita ranking.
+                
+                Regarding the Human Development Index or HDI, which is prepared by the United Nations to measure the progress of a country and which ultimately shows us the standard of living of its inhabitants, it indicates that Uruguayans are in 59th place.
+                
+                If the reason for visiting Uruguay is business, it is useful to know that Uruguay is in 101st place out of the 190 that make up the Doing Business ranking, which classifies countries according to the ease they offer for doing business.</p>
+                
+                <p>Regarding the Corruption Perception Index of the public sector in Uruguay, it has been 74 points, therefore, its inhabitants have a low level of perception of government corruption.
+                
+                In the tables at the bottom of the page you can expand information about the economy and demographics of Uruguay and if you want to see information about any other country you can do so from economy countries</p>
+             
+              <a href="https://datosmacro.expansion.com/paises/uruguay" class="info-button">+ Info</a>
+            </div>
+            <div class="Info" id="calendar">
+                <div id="calendario">
+                    <picture><img src="images/calendar.webp" alt="calendar" loading="lazy" width="500" height="300"></picture>
+                </div>
+            </div>
+            <div class="Info" id="visitor">
+                <p><span class="label">Fecha actual: </span> <span id="today"></span></p>
+                <p><span class="label">Número de visitas: </span><span class="visits"></span></p>
+                <p><span class="label">Número de visitas: </span><span id="visitor"></span></p>
+            </div>
+            
+          
+          </section> 
+          <div class="photo">
+            <picture><img src="images/boat-6568928_640.webp" alt="placeholder uruguay" loading="lazy" width="500" height="300"></picture>
+            <picture><img src="images/building-6671238_640.webp" alt="placeholder uruguay" loading="lazy" width="500" height="300"></picture>
+            <picture><img src="images/couple-6574732_640.webp" alt="placeholder uruguay" loading="lazy" width="500" height="300"></picture>
+            <picture><img src="images/la-mano-6532227_640.webp" alt="placeholder uruguay" loading="lazy" width="500" height="300"></picture>
+            <picture><img src="images/field-6549072_640.webp" alt="placeholder uruguay" loading="lazy" width="500" height="300"></picture>
+            <picture><img src="images/uruguay-3627261_640.webp" alt="placeholder uruguay" loading="lazy" width="500" height="300"></picture>
+            </div> 
+    </main>
 
-    <section class="card">
-        <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa del sitio"></iframe>
-    </section>
-
-</main>
-<footer>
-     <p id="footerFirstParagraph"></p>
-     <p id="lastModified"></p>
-</footer> 
-<script src="script/getdates.js"></script>
-<script src="script/visitor.js"></script>
-<script src="script/hamburgmenu.js"></script>
+    <footer>
+      <p id="footerFirstParagraph"></p>
+      <p id="lastModified"></p>
+      <div class="social-media">
+        <h3>Follow Us</h3>
+        <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/face.png" alt="Facebook"></a>
+        <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/wsa.png" alt="wasp"></a>
+      </div>
+    </footer>
+    <script src="script/getdates.js"></script>
+    <script src="script/localStorage.js"></script>
+    <script src="script/hamburgmenu.js"></script>
+    <script src="script/darkmode.js"></script>
+    <script src="script/windchill.js" defer></script>
+  </div>
 </body>
+
 </html>
