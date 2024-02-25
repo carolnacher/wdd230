@@ -23,7 +23,7 @@
     width: 100%;
     box-sizing: border-box;
     background-blend-mode: color;
-    background:#F6E8EA
+    background-color: #ffffff;
     
 }
 
@@ -461,6 +461,7 @@ footer{
     font-size: 15px;
   }
   main.page-discover {
+    width: 100%;
     grid-template-columns: 1fr 1fr;
     grid-gap: 32px;
   }
@@ -478,7 +479,9 @@ footer{
     height: auto; 
     display: block; 
   }
- 
+ #today{
+    font-size: 20px;
+ }
 
 /*dark mode*/
 
