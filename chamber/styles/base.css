@@ -416,8 +416,6 @@ h2{
   /*Lazy images*/
 
   img{
-    
-    background-color: black;
     animation: fade 10s;
 
 }
@@ -425,7 +423,7 @@ h2{
 footer{
     text-align: center;
     padding: 10px;
-    background-color:black; 
+    background-color:#002400; 
     color: #fff; 
     margin-top: 50px;
 }
@@ -442,11 +440,8 @@ footer{
 
 .Info {
     position: relative;
-    padding: 20px;
-    background-color: #B6C4B6; 
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
+    
     overflow: hidden;
   }
   
@@ -454,20 +449,53 @@ footer{
     float: left;
     margin-right: 20px;  
     height: auto; 
+    width: 100%;
+    max-width: 300px;
   }
   
+  #calendario img{
+    width: 100%;
+    max-width: 500px;
+  }
   .Info p {
     margin-top: 0; 
     font-size: 15px;
   }
+#carnival {
+    margin: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 10px; 
+} 
+#Contry-info {
+    margin: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+#visiter {
+    margin: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+
+}
+#calendar{
+    margin: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+#carnival:hover {box-shadow: 0 0 50px #333;}
+
   main.page-discover {
     width: 100%;
     grid-template-columns: 1fr 1fr;
     grid-gap: 32px;
+    padding: 0%;
   }
+
   .saturate {
     filter: saturate(50%);
   }
+
   #calendario {
     position: relative;
     width: 100%; 
@@ -479,8 +507,19 @@ footer{
     height: auto; 
     display: block; 
   }
+
  #today{
     font-size: 20px;
+ }
+
+.data{
+    background-color: #B6C4B6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+ .photo img{
+    
+    width: 100%;
+    height: auto;
  }
 
 /*dark mode*/

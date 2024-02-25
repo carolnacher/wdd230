@@ -26,20 +26,26 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   
   function displayWelcomeMessage() {
-    updateVisitorInfo("¡Bienvenido! ¡Háganos saber si tiene alguna pregunta!");
+    updateVisitorInfo("Welcome! Let us know if you have any questions.");
   }
   
   function displaySoonMessage() {
-    updateVisitorInfo("¡Volveremos tan pronto! ¡Impresionante!");
+    updateVisitorInfo("Back so soon! Awesome!");
   }
   
   function displayLastVisitMessage(daysDiff) {
-    var message = "La última vez que visitó fue hace " + daysDiff + " día";
-    if (daysDiff !== 1) {
-      message += "s";
-    }
-    updateVisitorInfo(message);
+    var message = "You last visited " + daysDiff + " day" + (daysDiff !== 1 ? "s" : "") + " ago";
+  
+    
+    var visitMessageElement = document.getElementById("visitMessage");
+  
+    
+    visitMessageElement.textContent = message;
   }
+  
+  
+  var daysDifference = 3; 
+  displayLastVisitMessage(daysDifference);
   
   function updateVisitCount() {
     var visitCount = localStorage.getItem("visitCount") || 0;
@@ -56,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
     todayElement.textContent = currentDate;
     visitsElement.textContent = visitCount;
   
-    // Asegurémonos de mostrar el mensaje correctamente
+    
     var messageElement = document.createElement("p");
     messageElement.textContent = message;
     document.getElementById("visitor").appendChild(messageElement);

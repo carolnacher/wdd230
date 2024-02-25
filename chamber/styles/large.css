@@ -80,8 +80,7 @@
 
     #menu::before {
         content: "☰";
-   
-     
+
     }
     
     #menu.open::before {
@@ -92,12 +91,18 @@
 
     #menu {
         margin-top: 15px;
-        margin-left: 265px;
+        margin-left: 235px;
         background: none;
         display: inline;
-        
+        font-size: 30px;
     }
-   
+    main.page-discover {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+        padding: 0%;
+      }
+    
 
     main {
         max-width: 800px;
