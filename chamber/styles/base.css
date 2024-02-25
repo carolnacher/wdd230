@@ -193,7 +193,7 @@ main {
     max-width: 1278px; 
     display: grid;
     grid-gap: 20px;
-    padding: 20px; 
+     
   }
   .section-container {
     display: grid;
@@ -331,6 +331,7 @@ div.gallery:hover {
 main {   
     grid-template-columns: 1fr 1fr;
     grid-gap: 32px;  
+    
 }
 section:nth-child(1) {
     display: block;
@@ -617,7 +618,6 @@ footer{
 
 .mapboxgl-canvas {
     max-width: 550px;
-    height: 275px;
     border: 1px solid #ccc;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
