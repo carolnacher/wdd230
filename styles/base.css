@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito+Sans:opsz@6..12&display=swap');
 
+:root {
+    --main-font: 'Nunito Sans', sans-serif;
+    --heading-font: 'Dancing Script', cursive;
+    --main-bg-color: #EEF0E5;
+    --header-bg-color: #163020;
+    --text-color: #333;
+    --link-color: #EEF0E5;
+}
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--main-font);
     font-size: 25px;
     line-height: 1.6;
-    color: #333; 
-    background-color:#EEF0E5; 
+    color: var(--text-color);
+    background-color: var(--main-bg-color);
 }
 
 header {
-    background-color:#163020; 
+    background-color: var(--header-bg-color);
     text-align: center;
     padding: 25px;
 }
@@ -22,11 +30,10 @@ header img {
 
 header h1 {
     display: inline-block;
-    color: #fff; 
+    color: #fff;
     margin-left: 10px;
-    font-family: 'Dancing Script', cursive;
+    font-family: var(--heading-font);
     font-size: 50px;
-   
 }
 h2 {
     font-size: 30px;
@@ -42,10 +49,10 @@ h3 {
 }
 
 nav a {
-    text-decoration: none; 
-    color:#EEF0E5;
+    text-decoration: none;
+    color: var(--link-color);
     font-size: 35px;
-    font-weight: 700; 
+    font-weight: 700;
 }
 #menu {
     font-size: 1.5rem;
@@ -86,16 +93,16 @@ footer {
     margin-top: 50px;
 }
 .navigation a:hover {
-    background-color:#163020;
+    background-color: var(--header-bg-color);
     color: #f0f0f0;
     font-weight: 700;
     border-radius: 4px;
     padding: 20px;
 }
-.navigation a:hover::before{
+.navigation a:hover::before {
     background-color: #f8e0f2;
-	color: #333;
-	font-weight: 700;
+    color: #333;
+    font-weight: 700;
 }
 
 
