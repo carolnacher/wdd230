@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Unlock business opportunities and networking in Montevideo with the local Chamber of Commerce. We drive business growth, foster collaboration, and provide essential resources for your company's success in the lively Uruguayan capital. Join us to expand your network and explore new business possibilities in Montevideo.">
+  <meta name="author" content="Carol Nacher">
+  <meta property="og:title" content="Home Page - Montevideo Chamber of Commerce" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://carolnacher.github.io/wdd230/" />
+  <meta property="og:image"
+    content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/The_City_%28198895997%29_%28cropped%29.jpg/288px-The_City_%28198895997%29_%28cropped%29.jpg" />
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link rel="icon" href="favicon(1).ico">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+  <title> Montevideo - Chamber of Commerce </title>
+</head>
+
+<body>
+  <div id="content">
+    <header>
+      <b><a href="index.html" id="logo-montevideo"></a>
+        <img class="logo" src="images/Montevideo.webp" alt="HealthyBites logo">
+      </b>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html"> Home</a></li>
+          <li><a href="discover.html"> Discover </a></li>
+          <li><a href="#"> Page 2 </a></li>
+          <li><a href="#"> Page 3 </a></li>
+        </ul>
+      </nav>
+    </header>
+    <button id="menu" aria-label="button Menu"></button>
+    <label for="mode" class="switch">
+      <input type="checkbox" id="mode">
+      <span class="slider round"></span>
+    </label>
+    <h1> Montevideo - Chamber of Commerce </h1>
+    <div class="hero">
+      <picture>
+          <source srcset="images/smallmont.webp" media="(max-width: 400px)">
+          <source srcset="images/mediummont.webp" media="(max-width: 686px)">
+          <img src="images/monte.webp" alt="temple picture" width="1278" height="800">
+      </picture>
+    </div> 
+    <button id="Join" aria-label="button Join"></button>
+    <h2>External links to the Government Chamber of Commerce of Uruguay</h2>
+    <main class="formPage">
+        <h1>Confirmation message</h1>
+            <p>Thank you for completing the form, it has been loaded correctly.</p>
+      
+    </main>
+
+    <footer>
+      <p id="footerFirstParagraph"></p>
+      <p id="lastModified"></p>
+      <div class="social-media">
+        <h3>Follow Us</h3>
+        <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/face.png" alt="Facebook"></a>
+        <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/wsa.png" alt="wasp"></a>
+      </div>
+    </footer>
+    <script>
+        var timestampField = document.getElementById("timestamp");
+        var currentTimestamp = Date.now();
+        timestampField.value = currentTimestamp;
+    </script>
+    <script src="script/getdates.js"></script>
+    
+    <script src="script/hamburgmenu.js"></script>
+    <script src="script/darkmode.js"></script>
+    <script src="script/windchill.js" defer></script>
+  </div>
+</body>
+
+</html>
