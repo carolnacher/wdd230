@@ -707,8 +707,9 @@ body.dark-mode #menu::after {
 }
 
 .wfl legend {
-    color: #445ba9;
+    color: #042181;
     padding: 0 .5rem;
+    font-weight: 4px;
 }
 
 .wfl label {
@@ -818,7 +819,8 @@ textarea {
 
 .membership-benefits ul li {
     margin-bottom: 10px;
-    color: #605f5f;
+    color: #3c3c3c;
+    font-weight: 2px;
 }
 
 
