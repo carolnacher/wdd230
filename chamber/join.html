@@ -19,10 +19,11 @@
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon(1).ico">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
-    <title> Montevideo - Chamber of Commerce </title>
+    <title> Join to Chamber of Commerce </title>
 </head>
 
 <body>
+
     <div id="content">
         <header>
             <b><a href="index.html" id="logo-montevideo"></a>
@@ -52,24 +53,24 @@
         </div>
         <h2>External links to the Government Chamber of Commerce of Uruguay</h2>
         <main class="formPage">
-            
+
             <form method="get" action="thanks.html" class="wfl">
 
                 <fieldset>
                     <legend>Application Information</legend>
-                    <label>First Name* <input Type="text" name="fname" id="fname" required></label>
-                    <label>Last Name* <input Type="text" name="lname" id="lname" required></label>
-                    <label> Title or position* <input Type="text" name="title" id="title-position" required
+                    <label>First Name* <input Type="Text" name="fname" id="fname" required></label>
+                    <label>Last Name* <input Type="Text" name="lname" id="lname" required></label>
+                    <label> Title or position* <input Type="Text" name="title" id="title-position" required
                             pattern="^[A-Za-z\s-]{7,}$"></label>
-                    <label> Email* <input Type="email" name="email" id="contactEmail" placeholder="someone@gmail.com"
+                    <label> Email* <input Type="Email" name="email" id="contactEmail" placeholder="someone@gmail.com"
                             required></label>
-                    <label> Phone* <input Type="tel" name="phone" id="phone-number" placeholder="12345678"
+                    <label> Phone* <input Type="Telephone" name="phone" id="phone-number" placeholder="12345678"
                             required></label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Bysiness Information</legend>
-                    <label>business/organization's name* <input Type="text" name="Oname" id="Oname" required></label>
+                    <label>business/organization's name* <input Type="Text" name="Oname" id="Oname" required></label>
                     <label>business/organization's description <textarea id="businessDescription"
                             name="businessDescription"></textarea></label>
                 </fieldset>
@@ -125,8 +126,10 @@
                 <input type="submit" value="Send">
 
             </form>
+        </main>
     </div>
-    </main>
+
+
     <footer>
         <p id="footerFirstParagraph"></p>
         <p id="lastModified"></p>
