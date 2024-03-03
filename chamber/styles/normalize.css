@@ -216,6 +216,8 @@ button,
 [type="submit"] {
   appearance: button;
   -webkit-appearance: button;
+  height: 44px;
+  width: 150px;
 }
 
 /**

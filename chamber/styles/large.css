@@ -91,10 +91,11 @@
 
     #menu {
         margin-top: 15px;
-        margin-left: 235px;
+        margin-left: 50%;
         background: none;
         display: inline;
-        font-size: 30px;
+        font-size:35px;
+        border: none;
     }
     main.page-discover {
         width: 100%;
