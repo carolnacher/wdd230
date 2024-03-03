@@ -783,9 +783,7 @@ input[type="tel"] {
 }
 
 .wfl input:required:valid {
-    border-bottom: solid px green;
-
-  
+    border-bottom: solid 3px green;
 }
 
 textarea {
