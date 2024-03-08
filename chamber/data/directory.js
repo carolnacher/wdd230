@@ -1,61 +1,61 @@
 const baseURL = "https://carolnacher.github.io/wdd230/";
 const linksURL = "https://carolnacher.github.io/wdd230/data/members.json";
 const cards = document.querySelector('#cards');
+const display = document.querySelector("article");
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
 
-async function getLinks() {
+async function getMembers() {
   try {
     const response = await fetch(linksURL);
     const data = await response.json();
-    displayLinks(data.lessons); // Cambiado de data.weeks a data.lessons
+    displayMembers(data.members); // Cambiado de data.lessons a data.members
   } catch (error) {
-    console.error('Error fetching links data:', error);
+    console.error('Error fetching members data:', error);
   }
 }
 
-function displayLinks(lessons) { // Cambiado de displayLinks(lesson) a displayLinks(lessons)
-  const lessonsList = document.createElement('ul');
+function displayMembers(members) { // Cambiado de displayLinks(lesson) a displayMembers(members)
+  const membersList = document.createElement('ul');
 
-  lessons.forEach((lesson, index) => {
-    const lessonItem = document.createElement('li');
-    const lessonTitle = document.createElement('h4');
-    const lessonLinks = document.createElement('ul');
+  members.forEach((member, index) => {
+    const memberItem = document.createElement('li');
+    const memberTitle = document.createElement('h4');
+    const memberInfo = document.createElement('ul');
 
-    lessonTitle.textContent = `Lesson ${lesson.lesson} Links:`;
+    memberTitle.textContent = `${member.name} - Membership Level ${member["membership level"]}`;
 
-    lesson.links.forEach((link, linkIndex) => {
-      const linkItem = document.createElement('li');
-      const linkElement = document.createElement('a');
-      linkElement.href = link.url; // No es necesario agregar baseURL aquí
-      linkElement.textContent = `${linkIndex + 1}. ${link.title}`;
+    const memberDetails = [
+      `Address: ${member.address}`,
+      `Phone Number: ${member["phone number"]}`,
+      `Website: ${member.url}`
+    ];
 
-      linkItem.appendChild(linkElement);
-      lessonLinks.appendChild(linkItem);
+    memberDetails.forEach((detail) => {
+      const detailItem = document.createElement('li');
+      detailItem.textContent = detail;
+      memberInfo.appendChild(detailItem);
     });
 
-    lessonItem.appendChild(lessonTitle);
-    lessonItem.appendChild(lessonLinks);
-    lessonsList.appendChild(lessonItem);
+    memberItem.appendChild(memberTitle);
+    memberItem.appendChild(memberInfo);
+    membersList.appendChild(memberItem);
   });
 
-  cards.appendChild(lessonsList);
+  cards.innerHTML = ''; // Limpiar el contenido actual antes de agregar la nueva lista de miembros
+  cards.appendChild(membersList);
 }
 
-getLinks();
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
-
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
-
-gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
+gridButton.addEventListener("click", () => {
+  display.classList.add("grid");
+  display.classList.remove("list");
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
+listButton.addEventListener("click", showList);
 
 function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
+  display.classList.add("list");
+  display.classList.remove("grid");
 }
+
+getMembers();
