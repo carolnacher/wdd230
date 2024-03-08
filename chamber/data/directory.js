@@ -1,5 +1,5 @@
 const baseURL = "https://carolnacher.github.io/wdd230/";
-const linksURL = "https://carolnacher.github.io/wdd230/data/members.json";
+const linksURL = "https://carolnacher.github.io/wdd230/chamber/data/members.json";
 const cards = document.querySelector('#cards');
 const display = document.querySelector("article");
 const gridButton = document.querySelector("#grid");
@@ -9,13 +9,13 @@ async function getMembers() {
   try {
     const response = await fetch(linksURL);
     const data = await response.json();
-    displayMembers(data.members); // Cambiado de data.lessons a data.members
+    displayMembers(data.members); 
   } catch (error) {
     console.error('Error fetching members data:', error);
   }
 }
 
-function displayMembers(members) { // Cambiado de displayLinks(lesson) a displayMembers(members)
+function displayMembers(members) { 
   const membersList = document.createElement('ul');
 
   members.forEach((member, index) => {
