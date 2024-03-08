@@ -6,16 +6,16 @@ async function getLinks() {
   try {
     const response = await fetch(linksURL);
     const data = await response.json();
-    displayLinks(data.lessons);
+    displayLinks(data.lessons); // Cambiado de data.weeks a data.lessons
   } catch (error) {
     console.error('Error fetching links data:', error);
   }
 }
 
-function displayLinks(lessons) {
+function displayLinks(lessons) { // Cambiado de displayLinks(lesson) a displayLinks(lessons)
   const lessonsList = document.createElement('ul');
 
-  lessons.forEach((lesson) => {
+  lessons.forEach((lesson, index) => {
     const lessonItem = document.createElement('li');
     const lessonTitle = document.createElement('h4');
     const lessonLinks = document.createElement('ul');
@@ -25,7 +25,7 @@ function displayLinks(lessons) {
     lesson.links.forEach((link, linkIndex) => {
       const linkItem = document.createElement('li');
       const linkElement = document.createElement('a');
-      linkElement.href = `${baseURL}${link.url}`;
+      linkElement.href = link.url; // No es necesario agregar baseURL aquí
       linkElement.textContent = `${linkIndex + 1}. ${link.title}`;
 
       linkItem.appendChild(linkElement);
