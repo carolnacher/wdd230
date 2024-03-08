@@ -1,0 +1,45 @@
+{
+    "wardInformation": {
+    "familyName": "Rodriguez",
+    "moveInDate": "2024-03-09",
+    "numberOfPeople": 7,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "David Rodriguez",
+        "gender": "Male",
+        "birthdate": "1986-05-02"
+      },
+      {
+        "name": "Romina Rodriguez",
+        "gender": "Female",
+        "birthdate": "1986-05-03"
+      },
+      {
+        "name": "Brandon Rodriguez",
+        "gender": "Male",
+        "birthdate": "2010-02-15"
+      },
+      {
+        "name": "Julia Rodriguez",
+        "gender": "Female",
+        "birthdate": "2014-08-27"
+      },
+      {
+        "name": "Mathias Rodriguez",
+        "gender": "Male",
+        "birthdate": "2017-04-10"
+      },
+      {
+        "name": "Sophia Rodriguez",
+        "gender": "Female",
+        "birthdate": "2019-09-18"
+      },
+      {
+        "name": "Juan Rodriguez",
+        "gender": "Male",
+        "birthdate": "2020-12-05"
+      }
+    ]
+    }
+  }

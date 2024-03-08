@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 230, Carol Nacher, This page focuses on my planning, design, and development of responsive websites using HTML, CSS, and JavaScript">
+    <meta name="description"
+        content="WDD 230, Carol Nacher, This page focuses on my planning, design, and development of responsive websites using HTML, CSS, and JavaScript">
     <meta name="author" content="Carol Nacher">
     <meta property="og:title" content="Carol Nacher Home page" />
     <meta property="og:type" content="web page" />
     <meta property="og:url" content="https://carolnacher.github.io/wdd230/" />
-    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/2/28/Collage_Landmarks_of_Montevideo.jpg" />
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/2/28/Collage_Landmarks_of_Montevideo.jpg" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -16,85 +19,71 @@
 
 
     <title> Carol Nacher - WDD 230 - Web Frontend Development</title>
-    
+
 </head>
+
 <body>
-<header>
-    <img
-    src="images/me.jpeg"
-    alt="Picture-Carol"
-    width="225"
-    height="248"
-    srcset="images/me.jpeg 639w, images/me.jpeg 1000w, images/me.jpeg 1800w"
-    sizes="(max-width: 639px) 450px, (max-width: 1080px) 675px, 1080px"
->
+    <header>
+        <img src="images/me.jpeg" alt="Picture-Carol" width="225" height="248"
+            srcset="images/me.jpeg 639w, images/me.jpeg 1000w, images/me.jpeg 1800w"
+            sizes="(max-width: 639px) 450px, (max-width: 1080px) 675px, 1080px">
 
-    <h1>Carol Nacher</h1>
-</header>
-<button id="menu" aria-label="button Menu"></button>
-<nav class="navigation">
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
-        <li><a href="chamber/">Chamber</a></li>
-        <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
-        <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li> 
-    </ul>
-</nav>
-
-
-
-<main>
-    <div class="hero">
-        <picture>
-            <source srcset="images/hero-small.webp" media="(max-width: 400px)">
-            <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
-            <img src="images/temple.webp" alt="temple picture" width="1278" height="800">
-        </picture>
-        <div class="herolabel">
-            <p>Montevideo Temple</p>
-        </div>
-    </div> 
-    
-    <h2>WDD 230: Web Frontend Development</h2>   
-
-    <section class="card">
-        <h3>Learning Activities</h3>
+        <h1>Carol Nacher</h1>
+    </header>
+    <button id="menu" aria-label="button Menu"></button>
+    <nav class="navigation">
         <ul>
-            <li><a href="lesson01/media-query.html">Lesson 01</a></li>
-            <li><a href="lesson02/design-principles.html">lesson 02</a></li>
-            <li><a href="images/combinator.jpg" target="_blank">Combinator</a></li>
-            <li><a href="https://codepen.io/Carol-Elizabeth-Nacher-Pifano/pen/Babmaab" target="_blank">Pseudo-elements</a></li>
-            <li><a href="https://codepen.io/Carol-Elizabeth-Nacher-Pifano/pen/zYbPxOj" target="_blank">Responsive Navigation</a></li>
-            <li><a href="https://codepen.io/Carol-Elizabeth-Nacher-Pifano/pen/GReQyoz" target="_blank">CSS Pseudo-Classes</a></li>
-            <li><a href="lesson05/bom.html" target="_blank">The Book of Mormon favorite Chapter</a></li>
-            <li><a href="images/landscape.webp" target="_blank">webp</a></li>
-            <li><a href="lesson6/responsive-images.html" target="_blank">Respinsive Image</a></li>
-            <li><a href="leccion07/lazyload.html" target="_blank">lazyload Image</a></li>
-            <li><a href="bom/bom.html" target="_blank">BOM</a></li>
-            <li><a href="lesson08/tablebuild.html" target="_blank">Table Build</a></li>
-            <li><a href="form/index.html" target="_blank">Form</a></li>
-            <li><a href="form.html" target="_blank">Form - Home page</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
         </ul>
-    </section>
+    </nav>
 
-    <section class="card">
-        <h3>Information</h3>
-        <p>Weather: [Placeholder]</p>
-        <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
-    </section>
 
-    <section class="card">
-        <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa del sitio"></iframe>
-    </section>
 
-</main>
-<footer>
-     <p id="footerFirstParagraph"></p>
-     <p id="lastModified"></p>
-</footer> 
-<script src="script/getdates.js"></script>
-<script src="script/visitor.js"></script>
-<script src="script/hamburgmenu.js"></script>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
+                <img src="images/temple.webp" alt="temple picture" width="1278" height="800">
+            </picture>
+            <div class="herolabel">
+                <p>Montevideo Temple</p>
+            </div>
+        </div>
+
+        <h2>WDD 230: Web Frontend Development</h2>
+
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <div id="cards"></div>
+        </section>
+
+
+        <section class="card">
+            <h3>Information</h3>
+            <p>Weather: [Placeholder]</p>
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+        </section>
+
+        <section class="card">
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                title="Mapa del sitio"></iframe>
+        </section>
+
+    </main>
+    <footer>
+        <p id="footerFirstParagraph"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="script/getdates.js"></script>
+    <script src="script/visitor.js"></script>
+    <script src="script/hamburgmenu.js"></script>
+    <script src="data/scripts/links.js"></script>
 </body>
+
 </html>
