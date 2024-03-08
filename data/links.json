@@ -1,64 +1,102 @@
 {
-    "weeks": [
-        {
-            "activities": [
-                {
-                    "title": "Media Queries",
-                    "link": "lesson01/media-query.html"
-                },
-                {
-                    "title": "Design Principles",
-                    "link": "lesson02/design-principles.html"
-                },
-                {
-                    "title": "Combinator",
-                    "link": "images/combinator.jpg"
-                },
-                {
-                    "title": "Pseudo-elements",
-                    "link": "https://codepen.io/Carol-Elizabeth-Nacher-Pifano/pen/Babmaab"
-                },
-                {
-                    "title": "Responsive Navigation",
-                    "link": "https://codepen.io/Carol-Elizabeth-Nacher-Pifano/pen/zYbPxOj"
-                },
-                {
-                    "title": "CSS Pseudo-Classes",
-                    "link": "https://codepen.io/Carol-Elizabeth-Nacher-Pifano/pen/GReQyoz"
-                },
-                {
-                    "title": "The Book of Mormon favorite Chapter",
-                    "link": "lesson05/bom.html"
-                },
-                {
-                    "title": "webp",
-                    "link": "images/landscape.webp"
-                },
-                {
-                    "title": "Responsive Image",
-                    "link": "lesson6/responsive-images.html"
-                },
-                {
-                    "title": "Lazyload Image",
-                    "link": "leccion07/lazyload.html"
-                },
-                {
-                    "title": "BOM",
-                    "link": "bom/bom.html"
-                },
-                {
-                    "title": "Table Build",
-                    "link": "lesson08/tablebuild.html"
-                },
-                {
-                    "title": "Form",
-                    "link": "form/index.html"
-                },
-                {
-                    "title": "Form - Home page",
-                    "link": "form.html"
-                }
-            ]
-        }
+    "lessons": [
+      {
+        "lesson": "01",
+        "links": [
+          {
+            "url": "lesson01/media-query.html",
+            "title": "Media Queries"
+          }
+        ]
+      },
+      {
+        "lesson": "02",
+        "links": [
+          {
+            "url": "lesson02/design-principles.html",
+            "title": "Design Principles Document"
+          }
+        ]
+      },
+      {
+        "lesson": "03",
+        "links": [
+          {
+            "url": "images/combinator.jpg",
+            "title": "Combinator"
+          }
+        ]
+      },
+      {
+        "lesson": "04",
+        "links": [
+          {
+            "url": "https://codepen.io/Carol-Elizabeth-Nacher-Pifano/pen/Babmaab",
+            "title": "Pseudo-elements"
+          },
+          {
+            "url": "https://codepen.io/Carol-Elizabeth-Nacher-Pifano/pen/zYbPxOj",
+            "title": "Responsive Navigation"
+          },
+          {
+            "url": "https://codepen.io/Carol-Elizabeth-Nacher-Pifano/pen/GReQyoz",
+            "title": "CSS Pseudo-Classes"
+          }
+        ]
+      },
+      {
+        "lesson": "05",
+        "links": [
+          {
+            "url": "lesson05/bom.html",
+            "title": "The Book of Mormon favorite Chapter"
+          }
+        ]
+      },
+      {
+        "lesson": "06",
+        "links": [
+          {
+            "url": "images/landscape.webp",
+            "title": "webp"
+          },
+          {
+            "url": "lesson6/responsive-images.html",
+            "title": "Responsive Image"
+          }
+        ]
+      },
+      {
+        "lesson": "07",
+        "links": [
+          {
+            "url": "leccion07/lazyload.html",
+            "title": "Lazyload Image"
+          }
+        ]
+      },
+      {
+        "lesson": "08",
+        "links": [
+          {
+            "url": "lesson08/tablebuild.html",
+            "title": "Table Build"
+          }
+        ]
+      },
+      {
+        "lesson": "09",
+        "links": [
+          {
+            "url": "form/index.html",
+            "title": "Form"
+          },
+          {
+            "url": "form.html",
+            "title": "Form - Home page"
+          }
+        ]
+      }
     ]
-}
+  }
+  

@@ -6,36 +6,38 @@ async function getLinks() {
   try {
     const response = await fetch(linksURL);
     const data = await response.json();
-    displayLinks(data.weeks);
+    displayLinks(data.lessons);
   } catch (error) {
     console.error('Error fetching links data:', error);
   }
 }
 
-function displayLinks(weeks) {
-  const activitiesList = document.createElement('ul');
+function displayLinks(lessons) {
+  const lessonsList = document.createElement('ul');
 
-  weeks.forEach((week, index) => {
-    const weekTitle = document.createElement('h4');
-    weekTitle.textContent = `Week ${index + 1} Activities:`;
+  lessons.forEach((lesson) => {
+    const lessonItem = document.createElement('li');
+    const lessonTitle = document.createElement('h4');
+    const lessonLinks = document.createElement('ul');
 
-    const weekList = document.createElement('ul');
+    lessonTitle.textContent = `Lesson ${lesson.lesson} Links:`;
 
-    week.activities.forEach((activity, activityIndex) => {
-      const listItem = document.createElement('li');
-      const link = document.createElement('a');
-      link.href = `${baseURL}${activity.link}`;
-      link.textContent = `${activityIndex + 1}. ${activity.title}`;
+    lesson.links.forEach((link, linkIndex) => {
+      const linkItem = document.createElement('li');
+      const linkElement = document.createElement('a');
+      linkElement.href = `${baseURL}${link.url}`;
+      linkElement.textContent = `${linkIndex + 1}. ${link.title}`;
 
-      listItem.appendChild(link);
-      weekList.appendChild(listItem);
+      linkItem.appendChild(linkElement);
+      lessonLinks.appendChild(linkItem);
     });
 
-    activitiesList.appendChild(weekTitle);
-    activitiesList.appendChild(weekList);
+    lessonItem.appendChild(lessonTitle);
+    lessonItem.appendChild(lessonLinks);
+    lessonsList.appendChild(lessonItem);
   });
 
-  cards.appendChild(activitiesList);
+  cards.appendChild(lessonsList);
 }
 
 getLinks();
