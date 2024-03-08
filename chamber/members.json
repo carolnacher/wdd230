@@ -7,38 +7,59 @@
     "familyMembers": [
       {
         "name": "David Rodriguez",
-        "gender": "Male",
-        "birthdate": "1986-05-02"
+        "address": "Male",
+        "phone number": "1986-05-02",
+        "url": "1986-05-02",
+        "image": "1986-05-02",
+        "membership level": "1986-05-02"
       },
       {
-        "name": "Romina Rodriguez",
-        "gender": "Female",
-        "birthdate": "1986-05-03"
+        "name": "David Rodriguez",
+        "address": "Male",
+        "phone number": "1986-05-02",
+        "url": "1986-05-02",
+        "image": "1986-05-02",
+        "membership level": "1986-05-02"
       },
       {
-        "name": "Brandon Rodriguez",
-        "gender": "Male",
-        "birthdate": "2010-02-15"
+        "name": "David Rodriguez",
+        "address": "Male",
+        "phone number": "1986-05-02",
+        "url": "1986-05-02",
+        "image": "1986-05-02",
+        "membership level": "1986-05-02"
       },
       {
-        "name": "Julia Rodriguez",
-        "gender": "Female",
-        "birthdate": "2014-08-27"
+        "name": "David Rodriguez",
+        "address": "Male",
+        "phone number": "1986-05-02",
+        "url": "1986-05-02",
+        "image": "1986-05-02",
+        "membership level": "1986-05-02"
       },
       {
-        "name": "Mathias Rodriguez",
-        "gender": "Male",
-        "birthdate": "2017-04-10"
+        "name": "David Rodriguez",
+        "address": "Male",
+        "phone number": "1986-05-02",
+        "url": "1986-05-02",
+        "image": "1986-05-02",
+        "membership level": "1986-05-02"
       },
       {
-        "name": "Sophia Rodriguez",
-        "gender": "Female",
-        "birthdate": "2019-09-18"
+        "name": "David Rodriguez",
+        "address": "Male",
+        "phone number": "1986-05-02",
+        "url": "1986-05-02",
+        "image": "1986-05-02",
+        "membership level": "1986-05-02"
       },
       {
-        "name": "Juan Rodriguez",
-        "gender": "Male",
-        "birthdate": "2020-12-05"
+        "name": "David Rodriguez",
+        "address": "Male",
+        "phone number": "1986-05-02",
+        "url": "1986-05-02",
+        "image": "1986-05-02",
+        "membership level": "1986-05-02" 
       }
     ]
     }
