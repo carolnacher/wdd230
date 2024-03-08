@@ -42,19 +42,23 @@
         </ul>
     </nav>
     <main class="formPage">
-        <h1>Form page Lesson 08</h1>
+        <h1>Form</h1>
         <div id="formmessage"></div>
         <form method="get" action="record.html" class="wf1">
             <fieldset>
-                <legend> Log in information</legend>
+                <legend>Log in information</legend>
                 <label>User Name* <input type="text" id="username" name="fname" required></label>
-                <label>Password* <input type="password" id="password" name="password"
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
-                <label>Confirm Password* <input type="password" id="confirmpassword" name="confirmpassword"
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
-                <label>Email* <input type="email" id="email" name="email" placeholder="Example@byui.edu"
-                        pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
-
+                <label>Password* 
+                    <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Mypassword*123" required>
+                    <span class="password-toggle" onclick="togglePasswordVisibility('password')">&#128065;</span>
+                </label>
+                <label>Confirm Password* 
+                    <input type="password" id="confirmpassword" name="confirmpassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    <span class="password-toggle" onclick="togglePasswordVisibility('confirmpassword')">&#128065;</span>
+                </label>
+                <label>Email* 
+                    <input type="email" id="email" name="email" placeholder="Example@byui.edu" pattern="[a-zA-Z0-9_.\-]+@byui.edu" required>
+                </label>
             </fieldset>
             <fieldset>
                 <legend>Course Information</legend>

@@ -183,7 +183,7 @@
     
     /*discover-page*/
 
-    .saturate  {
-        filter: none; 
-      }
+    .photo :hover{
+        filter: none;
+    }
 }

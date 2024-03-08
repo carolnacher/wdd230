@@ -484,11 +484,13 @@ footer {
     height: auto;
     width: 100%;
     max-width: 300px;
+    
 }
 
 #calendario img {
     width: 100%;
     max-width: 500px;
+
 }
 
 .Info p {
@@ -520,6 +522,7 @@ footer {
     margin: 35px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     padding: 10px;
+    
 }
 
 #carnival:hover {
@@ -533,9 +536,6 @@ main.page-discover {
     padding: 0%;
 }
 
-.saturate {
-    filter: saturate(50%);
-}
 
 #calendario {
     position: relative;
@@ -562,6 +562,13 @@ main.page-discover {
 
     width: 100%;
     height: auto;
+    
+}
+.photo :hover{
+    filter: saturate(80%);
+}
+picture :hover{
+    filter: saturate(80%);
 }
 
 /*dark mode*/
