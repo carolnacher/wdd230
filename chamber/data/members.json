@@ -5,7 +5,7 @@
       "address": "La Cumparsita 1475",
       "phone number": "(+598) 2418 9086 - 0800 8218",
       "url": "https://www.elobservador.com.uy/",
-      "image": "wdd230/chamber/images/el-observador.jpg",
+      "image": "https://carolnacher.github.io/wdd230/chamber/images/el-observador.jpg",
       "membership level": "1"
     },
     {
@@ -13,7 +13,7 @@
       "address": "Zelmar Michelini 1287",
       "phone number": "(+598) 1234 567",
       "url": "https://www.elpais.com.uy/informacion/portada",
-      "image": "wdd230/chamber/images/channel.jpg",
+      "image": "https://carolnacher.github.io/wdd230/chamber/images/channel.jpg",
       "membership level": "2"
     },
     {
