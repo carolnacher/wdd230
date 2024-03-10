@@ -1,25 +1,25 @@
-const baseURL = "https://carolnacher.github.io/wdd230";
-const linksURL = "https://carolnacher.github.io/wdd230/chamber/data/members.json";
+
+const url = "https://carolnacher.github.io/wdd230/chamber/data/members.json";
+const cards = document.querySelector('#cards');
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 
 async function getMembers() {
-  try {
-    const response = await fetch(linksURL);
-    const data = await response.json();
-    displayMembers(data);
-  } catch (error) {
-    console.error("Error al obtener los datos:", error);
-  }
-}
 
-function displayMembers(members) {
+  const response = await fetch(linksURL);
+  const data = await response.json();
+  displayMembers(data.members);
+
+}
+getMembers();
+
+const displayMembers = (members) => {
   const membersList = document.createElement('ul');
 
-  members.forEach((member) => {
-    const memberItem = document.createElement('li');
-    const memberTitle = document.createElement('h4');
-    const memberInfo = document.createElement('ul');
+  members.forEach((member, index) => {
+    let memberItem = document.createElement('li');
+    let memberTitle = document.createElement('h4');
+    let memberInfo = document.createElement('ul');
 
     memberTitle.textContent = `${member.name} - Membership Level ${member["membership level"]}`;
 
@@ -40,7 +40,7 @@ function displayMembers(members) {
     membersList.appendChild(memberItem);
   });
 
-  cards.innerHTML = ''; // Limpiar el contenido actual antes de agregar la nueva lista de miembros
+  cards.innerHTML = '';
   cards.appendChild(membersList);
 }
 
