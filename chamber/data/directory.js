@@ -26,7 +26,7 @@ function displayMembers(members) {
 
     memberTitle.textContent = `${member.name} - Membership Level ${member["membership level"]}`;
 
-    memberImage.src = `${baseURL}/${member.image}`; // Ajustar la ruta de la imagen según sea necesario
+    memberImage.src = `${member.image}`;
     memberImage.alt = `${member.name} Image`;
     memberImage.classList.add('member-image');
 
