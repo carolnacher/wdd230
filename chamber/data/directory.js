@@ -2,8 +2,8 @@ const baseURL = "https://carolnacher.github.io/wdd230";
 const linksURL = "https://carolnacher.github.io/wdd230/chamber/data/members.json";
 const cards = document.querySelector('#cards');
 const display = document.querySelector("article");
-const gridButton = document.querySelector("#grid");
-const listButton = document.querySelector("#list");
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
 
 async function getMembers() {
   try {
@@ -22,13 +22,19 @@ function displayMembers(members) {
     const memberItem = document.createElement('li');
     const memberTitle = document.createElement('h4');
     const memberInfo = document.createElement('ul');
+    const memberImage = document.createElement('img');
 
     memberTitle.textContent = `${member.name} - Membership Level ${member["membership level"]}`;
+
+    memberImage.src = `${baseURL}/${member.image}`; // Ajustar la ruta de la imagen según sea necesario
+    memberImage.alt = `${member.name} Image`;
+    memberImage.classList.add('member-image');
 
     const memberDetails = [
       `Address: ${member.address}`,
       `Phone Number: ${member["phone number"]}`,
       `Website: ${member.url}`
+
     ];
 
     memberDetails.forEach((detail) => {
@@ -37,6 +43,7 @@ function displayMembers(members) {
       memberInfo.appendChild(detailItem);
     });
 
+    memberItem.appendChild(memberImage);
     memberItem.appendChild(memberTitle);
     memberItem.appendChild(memberInfo);
     membersList.appendChild(memberItem);
@@ -46,16 +53,18 @@ function displayMembers(members) {
   cards.appendChild(membersList);
 }
 
-gridButton.addEventListener("click", () => {
-  display.classList.add("grid");
-  display.classList.remove("list");
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid");
+	display.classList.remove("list");
 });
 
-listButton.addEventListener("click", showList);
+listbutton.addEventListener("click", showList); // example using defined function
 
 function showList() {
-  display.classList.add("list");
-  display.classList.remove("grid");
+	display.classList.add("list");
+	display.classList.remove("grid");
 }
+
 
 getMembers();
