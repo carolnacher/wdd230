@@ -186,4 +186,8 @@
     .photo :hover{
         filter: none;
     }
+    .directory ul{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }

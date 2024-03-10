@@ -39,5 +39,8 @@
         padding: 0 0 0;
         top:100px;
     }
-    
+    .directory ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
