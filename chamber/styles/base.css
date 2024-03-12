@@ -804,9 +804,7 @@ textarea {
 /*  Membership */
 .membership-benefits {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    text-align-last: center;
 }
 
 .membership-benefits>div {
@@ -830,6 +828,17 @@ textarea {
     font-weight: 500;
 }
 
+input[name="email"]:required:valid {
+	border-bottom: solid 3px green;
+}
+
+input[name="email"]:invalid {
+    border-bottom: solid 3px red;
+}
+
+input {
+	padding: .5rem;
+}
 
 
 .button-box {
@@ -843,13 +852,26 @@ textarea {
     margin-right: 50px;
 }
 
-
+input::placeholder {
+	font-size: 20px;
+	font-weight: 700;
+}
 
 .button-box:hover {
     transform: scale(1.2);
     box-shadow: 0 0 100px #097f25;
 
 }
+input[type = "submitEmail"] {
+    width: 30%;
+    margin-top: 10px; 
+    background-image: linear-gradient(#7B904B, #002400);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: #F6E8EA;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
 /*Directory css*/ 
 .directory {
     margin: 0 auto;

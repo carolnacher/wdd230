@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Form page to join our community and receive all personalized information.0">
+    <meta name="description" content="Form page to join our community and receive all personalized information.0">
     <meta name="author" content="Carol Nacher">
     <meta property="og:title" content="Join Page - Montevideo Chamber of Commerce" />
     <meta property="og:type" content="website" />
@@ -33,7 +32,7 @@
                 <ul>
                     <li><a href="index.html"> Home</a></li>
                     <li><a href="discover.html"> Discover </a></li>
-                    <li><a href="directory.html"> Directory </a></li>
+                    <li><a href="directory.html00"> Directory </a></li>
                     <li><a href="join.html"> Join </a></li>
                 </ul>
             </nav>
@@ -62,8 +61,12 @@
                     <label>Last Name* <input type="text" name="lname" id="lname" required></label>
                     <label> Title or position* <input type="text" name="title" id="title-position" required
                             pattern="^[A-Za-z\s-]{7,}$"></label>
-                    <label> Email* <input type="email" name="email" id="contactEmail" placeholder="someone@gmail.com"
-                            required></label>
+                    <label for="email">Email:</label>
+                    <div class="email-input-container">
+                        <input type="email" id="email" name="email" placeholder="Your byui email address"
+                            title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required>
+                        <input type="submitEmail" value="Validate">
+                    </div>
                     <label> Phone* <input type="tel" name="phone" id="phone-number" placeholder="12345678"
                             required></label>
                 </fieldset>
