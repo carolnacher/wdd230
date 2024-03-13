@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     firstParagraph.innerHTML = `&copy; ${currentYear} ${decoratedName} -  ${uruguayFlag} ${uruguayFlagImage}`;
 
     let lastModifiedParagraph = document.getElementById("lastModified");
-    lastModifiedParagraph.innerHTML = "Última modificación: " + document.lastModified;
+    lastModifiedParagraph.innerHTML = "Last Modification: " + document.lastModified;
 
     
 });

@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let lastModifiedParagraph = document.getElementById("lastModified");
     lastModifiedParagraph.innerHTML = "Última modificación: " + document.lastModified;
     var timestampField = document.getElementById('timestamp');
-    timestampField.value = Date.now();
+
 
      
 });

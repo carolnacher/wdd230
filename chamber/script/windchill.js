@@ -24,13 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
                         
                         const temperatureCelsius = temperatureKelvin - 273.15;
 
-                        // Verificar límites permitidos para calcular oficialmente la sensación térmica
+                       
                         if (temperatureCelsius > 50 || windSpeed <= 3.0) {
                             var windChill = "N/A";
                         } else {
                             const temperatureFahrenheit = (temperatureCelsius * 9/5) + 32;
                             const windSpeedMetersPerSecond = windSpeed;
-                            // Fórmula para calcular la sensación térmica en Fahrenheit y mph
+                           
                             windChill = 35.74 + 0.6215 * temperatureFahrenheit - 35.75 * Math.pow(windSpeedMetersPerSecond, 0.16) + 0.4275 * temperatureFahrenheit * Math.pow(windSpeedMetersPerSecond, 0.16);
                         }
 
