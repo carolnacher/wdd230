@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const rangevalue = document.getElementById("rangevalue");
 const range = document.getElementById("r");
 
-// RANGE event listener
+
 range.addEventListener('change', displayRatingValue);
 range.addEventListener('input', displayRatingValue);
 
@@ -48,15 +48,3 @@ function displayRatingValue() {
     rangevalue.innerHTML = range.value;
 }
 
-function togglePasswordVisibility(inputId) {
-	var passwordInput = document.getElementById(inputId);
-	var passwordToggle = document.querySelector('label[for="' + inputId + '"] .password-toggle');
-
-	if (passwordInput.type === 'password') {
-		passwordInput.type = 'text';
-		passwordToggle.innerHTML = '&#128065;'; 
-	} else {
-		passwordInput.type = 'password';
-		passwordToggle.innerHTML = '&#128065;';
-	}
-}

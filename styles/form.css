@@ -3,6 +3,7 @@
     display:grid;
     grid-template-columns: 1fr;
     max-width: 800px;
+   padding: 10px;
     
 }
 .wf1 fieldset {
@@ -139,9 +140,9 @@
 #rangevalues option {
 	flex: 1 1 auto;
 }
-#password, #confirmpassword {
-  width: calc(100% - 25px);
-}
 .password-toggle {
   cursor: pointer;
+}
+h1{
+  margin-left: 10px;
 }

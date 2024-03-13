@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="WDD 230, Carol Nacher, This page focuses on my planning, design, and development of responsive websites using HTML, CSS, and JavaScript">
+        content="This page consists of a form to upload personal information and show the conformity of the page.">
     <meta name="author" content="Carol Nacher">
-    <meta property="og:title" content="Carol Nacher Home page" />
+    <meta property="og:title" content="Form Page" />
     <meta property="og:type" content="web page" />
     <meta property="og:url" content="https://carolnacher.github.io/wdd230/" />
     <meta property="og:image"
@@ -19,7 +19,7 @@
     <link rel="icon" href="favicon.ico">
 
 
-    <title> Carol Nacher - WDD 230 - Web Frontend Development</title>
+    <title> Carol Nacher - WDD 230 - form</title>
 
 </head>
 
@@ -48,38 +48,25 @@
             <fieldset>
                 <legend>Log in information</legend>
                 <label>User Name* <input type="text" id="username" name="fname" required></label>
-                <label>Password* 
-                    <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Mypassword*123" required>
-                    <span class="password-toggle" onclick="togglePasswordVisibility('password')">&#128065;</span>
+                <label>Password*
+                    <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="The password must contain at least 8 characters, including at least one lowercase letter, one uppercase letter, and one digit."
+                        required>
                 </label>
-                <label>Confirm Password* 
-                    <input type="password" id="confirmpassword" name="confirmpassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-                    <span class="password-toggle" onclick="togglePasswordVisibility('confirmpassword')">&#128065;</span>
+                <label>Confirm Password*
+                    <input type="password" id="confirmpassword" name="confirmpassword"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+
                 </label>
-                <label>Email* 
-                    <input type="email" id="email" name="email" placeholder="Example@byui.edu" pattern="[a-zA-Z0-9_.\-]+@byui.edu" required>
-                </label>
+                <label for="email">Email*</label>
+                <div class="email-input-container">
+                    <input type="email" id="email" name="email" placeholder="Your byui email address"
+                        title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required>
+                </div>
             </fieldset>
             <fieldset>
-                <legend>Course Information</legend>
-                <label>Please Select a star rate </label>
-                <div class="star-rating">
-                    <input type="radio" name="stars" id="star-a" value="5" />
-                    <label for="star-a"></label>
+                <legend>Range value</legend>
 
-                    <input type="radio" name="stars" id="star-b" value="4" />
-                    <label for="star-b"></label>
-
-                    <input type="radio" name="stars" id="star-c" value="3" />
-                    <label for="star-c"></label>
-
-                    <input type="radio" name="stars" id="star-d" value="2" />
-                    <label for="star-d"></label>
-
-                    <input type="radio" name="stars" id="star-e" value="1" />
-                    <label for="star-e"></label>
-                </div>
-                <label for="r">Select a value </label>
                 <div id="rangevalue">0</div>
                 <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
                 <datalist id="rangevalues">

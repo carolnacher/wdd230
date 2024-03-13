@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         
                         map = new mapboxgl.Map({
                             container: 'map',
-                            style: 'mapbox://styles/mapbox/satellite-streets-v12',
+                            style: 'mapbox://styles/mapbox/streets-v11',
                             center: [lon, lat],
                             zoom: 10
                         });
