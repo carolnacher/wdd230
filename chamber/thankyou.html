@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="This page is intended to indicate to the user that their form has been sent and that we will contact them soon.">
+  <meta name="description"
+    content="This page is intended to indicate to the user that their form has been sent and that we will contact them soon.">
   <meta name="author" content="Carol Nacher">
   <meta property="og:title" content="thankyou Page - Montevideo Chamber of Commerce" />
   <meta property="og:type" content="website" />
@@ -24,9 +25,9 @@
 <body>
   <div id="content">
     <header>
-      <b><a href="index.html" id="logo-montevideo"></a>
+      <a href="index.html" id="logo-montevideo" aria-label="HealthyBites homepage">
         <img class="logo" src="images/Montevideo.webp" alt="HealthyBites logo">
-      </b>
+      </a>
       <nav class="navigation">
         <ul>
           <li><a href="index.html"> Home</a></li>
@@ -37,38 +38,38 @@
       </nav>
     </header>
     <button id="menu" aria-label="button Menu"></button>
-    <label for="mode" class="switch">
+    <label for="mode" class="switch" name="Mode oscuro">
       <input type="checkbox" id="mode">
       <span class="slider round"></span>
     </label>
     <h1> Montevideo - Chamber of Commerce </h1>
-   
+
     <h2>External links to the Government Chamber of Commerce of Uruguay</h2>
     <main class="formPage">
-        <h1>Confirmation message</h1>
-            <p>Thank you for completing the form, it has been loaded correctly.</p>
-      
+      <h1>Confirmation message</h1>
+      <p>Thank you for completing the form, it has been loaded correctly.</p>
+
     </main>
 
     <footer>
       <p id="footerFirstParagraph"></p>
       <p id="lastModified"></p>
       <div class="social-media">
-        <h3>Follow Us</h3>
-        <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/face.png" alt="Facebook"></a>
-        <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/wsa.png" alt="wasp"></a>
+        <h2>Follow Us</h2>
+        <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/face.webp" alt="Facebook"></a>
+        <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/wsa.webp" alt="wasp"></a>
       </div>
     </footer>
     <script>
-        var timestampField = document.getElementById("timestamp");
-        var currentTimestamp = Date.now();
-        timestampField.value = currentTimestamp;
+      var timestampField = document.getElementById("timestamp");
+      var currentTimestamp = Date.now();
+      timestampField.value = currentTimestamp;
     </script>
-    <script src="script/getdates.js"></script>
-    
-    <script src="script/hamburgmenu.js"></script>
-    <script src="script/darkmode.js"></script>
-    <script src="script/windchill.js" defer></script>
+    <script src="scripts/getdates.js"></script>
+
+    <script src="scripts/hamburgmenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js" defer></script>
   </div>
 </body>
 
