@@ -183,5 +183,10 @@ iframe {
     font-size: 2rem;
     font-family: 'Dancing Script', cursive;
 }
+figure #weather-icon{
+    float: left;
+    margin: 0%;
+
+ }
 
 }
