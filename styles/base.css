@@ -8,6 +8,7 @@
     --text-color: #333;
     --link-color: #EEF0E5;
 }
+
 body {
     font-family: var(--main-font);
     font-size: 25px;
@@ -23,9 +24,9 @@ header {
 }
 
 header img {
-    display: inline-block; 
-    vertical-align: middle; 
-    
+    display: inline-block;
+    vertical-align: middle;
+
 }
 
 header h1 {
@@ -35,17 +36,25 @@ header h1 {
     font-family: var(--heading-font);
     font-size: 50px;
 }
+
 h2 {
     font-size: 30px;
     text-align: center;
 }
+p{
+    text-align: center;
+}
 h3 {
     font-size: 20px;
+    background-color: #163020;
+    color:#fff;
+    border-radius: 4px;
+    padding: 10px;
 }
 
 .navigation ul {
-    list-style-type: none; 
-    padding: 10px; 
+    list-style-type: none;
+    padding: 10px;
 }
 
 nav a {
@@ -54,44 +63,47 @@ nav a {
     font-size: 35px;
     font-weight: 700;
 }
+
 #menu {
     font-size: 1.5rem;
     border: 0;
     background: none;
     color: white;
     position: absolute;
-    
+
     left: 1rem;
 }
 
 
 main {
     max-width: 800px;
-    margin: 0 auto; 
+    margin: 0 auto;
     display: grid;
     grid-gap: 20px;
 }
 
-.card {
-   
-    padding: 20px;
-    background-color: #B6C4B6; 
+.card .weatherInformation {
+
+    background-color: #B6C4B6;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
 }
-ul li a{
-    text-decoration: none; 
+
+ul li a {
+    text-decoration: none;
     font-size: 20px;
     font-weight: 700;
 }
+
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #163020; 
-    color: #fff; 
+    background-color: #163020;
+    color: #fff;
     margin-top: 50px;
 }
+
 .navigation a:hover {
     background-color: var(--header-bg-color);
     color: #f0f0f0;
@@ -99,6 +111,7 @@ footer {
     border-radius: 4px;
     padding: 20px;
 }
+
 .navigation a:hover::before {
     background-color: #f8e0f2;
     color: #333;
@@ -118,13 +131,7 @@ button #menu::before {
 
 #menu.open::before {
     content: "⌵";
-    color:#EEF0E5;
-}
-main {
-
-    margin: 0 auto;
-    display: inline;
-    grid-gap: 20px;
+    color: #EEF0E5;
 }
 
 iframe {
@@ -135,58 +142,68 @@ iframe {
 }
 
 #visits {
-	color: navy;
-	font-weight: bolder;
-	font-size: larger;
+    color: navy;
+    font-weight: bolder;
+    font-size: larger;
 }
-@media  (max-width: 639px){
-    
-
-.navigation.open  {
-    background-color: #304D30; 
-    text-align: center; 
-    padding: 20px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    
-}
-.navigation{
-    display: none;
-}
-.hero {
-    margin: 10px auto;
-    position: relative;
-    border: 1px solid rgba(0, 0, 0, .1);
-    grid-column: span 2;
+figure, figcaption #weather-iconb {
+    margin-left: 50px;
+    text-align: center;
 }
 
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.herolabel {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    padding: 1.5rem;
-    opacity: 0.75;
-}
+@media (max-width: 639px) {
 
 
-.herolabel p {
-    margin: 0;
-    padding: .25rem;
-    font-weight: 700;
-    font-size: 2rem;
-    font-family: 'Dancing Script', cursive;
-}
-figure #weather-icon{
-    float: left;
-    margin: 0%;
+    .navigation.open {
+        background-color: #304D30;
+        text-align: center;
+        padding: 20px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
 
- }
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .hero {
+        margin: 10px auto;
+        position: relative;
+        border: 1px solid rgba(0, 0, 0, .1);
+        grid-column: span 2;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .herolabel {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        padding: 1.5rem;
+        opacity: 0.75;
+    }
+
+
+    .herolabel p {
+        margin: 0;
+        padding: .25rem;
+        font-weight: 700;
+        font-size: 2rem;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    figure #weather-icon {
+        float: left;
+        margin: 0%;
+
+    }
+
+
 
 }
