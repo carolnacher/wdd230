@@ -924,19 +924,16 @@ input[type = "submitEmail"] {
 }
 .grida {
     display: grid;
-    
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas flexibles */
     grid-gap: 15px;
     align-items: center;
 }
-
-.grida  {
-    text-align: center;
-}
-
  .grida img {
     border: 1px solid #fff;
     box-shadow: 0 0 10px #333;
     max-width: 250px;
+    width: 100%;
+    height: auto;
     margin: 15px;
     border-radius: 10px;
 }

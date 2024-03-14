@@ -196,4 +196,11 @@
         justify-content: space-between;
         text-align-last: center;
     }
+
+    /*directory page*/
+    
+    .grida {
+        grid-template-columns: 1fr;
+    }
+    
 }
