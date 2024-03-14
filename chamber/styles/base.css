@@ -924,15 +924,15 @@ input[type = "submitEmail"] {
 }
 .grida {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas flexibles */
+    grid-template-columns: 1fr ; 
     grid-gap: 15px;
     align-items: center;
 }
  .grida img {
     border: 1px solid #fff;
     box-shadow: 0 0 10px #333;
-    max-width: 250px;
-    width: 100%;
+    max-width: 200px;
+    
     height: auto;
     margin: 15px;
     border-radius: 10px;
