@@ -1,9 +1,6 @@
 @media (max-width: 1076px) {
  
 
-    main {
-        grid-template-columns: 1fr ;
-    }
     div.gallery img {
         width: 300px;
         height: auto;

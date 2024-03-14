@@ -197,10 +197,11 @@ img.logo {
 
 main {
     margin: 0 auto;
-    max-width: 1278px;
+    padding: 20px;
+    max-width: 1200px;
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
-
 }
 
 .section-container {
@@ -210,10 +211,8 @@ main {
 }
 
 section {
-    justify-content: center;
-    display: grid;
-    
-    
+    text-align: center;
+    display: grid;    
 }
 
 footer .social img {
@@ -349,11 +348,7 @@ div.gallery:hover {
 
 }
 
-main {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 32px;
 
-}
 
 section:nth-child(1) {
     display: block;
@@ -370,11 +365,6 @@ section:nth-child(3) {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
-}
-
-h2 {
-    padding: 20px;
-
 }
 
 .box {
@@ -664,16 +654,13 @@ body.dark-mode {
 #map {
     max-width: 550px;
     height: 275px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
 }
 
 .mapboxgl-canvas {
     max-width: 550px;
-    border: 1px solid #ccc;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
+    border-radius: 20px;  
 }
 
 .mapboxgl-ctrl-attrib-inne {
