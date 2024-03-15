@@ -210,11 +210,6 @@ main {
     grid-gap: 20px;
 }
 
-section {
-    text-align: center;
-    display: grid;    
-}
-
 footer .social img {
     padding: 25px 10px;
     padding-bottom: 0;
@@ -291,7 +286,7 @@ p a {
 section.responsive {
     display: flex;
     justify-content: center;
-
+    
 }
 
 
@@ -359,8 +354,6 @@ section:nth-child(3) {
 }
 
 .responsive {
-
-
     background-color: #B6C4B6;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
