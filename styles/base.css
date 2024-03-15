@@ -41,13 +41,15 @@ h2 {
     font-size: 30px;
     text-align: center;
 }
-p{
+
+p {
     text-align: center;
 }
+
 h3 {
     font-size: 20px;
     background-color: #163020;
-    color:#fff;
+    color: #fff;
     border-radius: 4px;
     padding: 10px;
 }
@@ -146,7 +148,9 @@ iframe {
     font-weight: bolder;
     font-size: larger;
 }
-figure, figcaption #weather-iconb {
+
+figure,
+figcaption #weather-iconb {
     margin-left: 50px;
     text-align: center;
 }
@@ -204,6 +208,9 @@ figure, figcaption #weather-iconb {
 
     }
 
+    .weatherInformation {
+        background-color: #fff;
+    }
 
 
 }
