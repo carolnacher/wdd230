@@ -36,6 +36,7 @@
           <li><a href="join.html"> Join </a></li>
         </ul>
       </nav>
+
     </header>
     <button id="menu" aria-label="button Menu"></button>
     <label for="mode" class="switch" name="Mode oscuro">
@@ -43,13 +44,19 @@
       <span class="slider round"></span>
     </label>
     <section>
+      <div id="banner" style="display: none;">
+        <p>Welcome visitors!<br>We invite you to attend the chamber of commerce meet and greet with us<br>Wednesday at 7:00 p.m.</p>
+        <button id="closeBanner">Close</button>
+      </div>
+    </section>
+    <section>
       <h1> Montevideo - Chamber of Commerce </h1>
     </section>
     <div class="hero">
       <picture>
         <source srcset="images/monteS.webp" media="(max-width: 400px)">
         <source srcset="images/monteM.webp" media="(max-width: 686px)">
-        <img src="images/monte.png" alt="temple picture" width="1278" height="800">
+        <img src="images/monte.webp" alt="temple picture" width="1278" height="800">
       </picture>
     </div>
     <h2>External links to the Government Chamber of Commerce of Uruguay</h2>
@@ -119,6 +126,7 @@
     <script src="scripts/hamburgmenu.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/banner.js"></script>
   </div>
 </body>
 

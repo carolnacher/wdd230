@@ -829,7 +829,7 @@ input {
 }
 
 
-.button-box {
+#closeBanner, .button-box {
     background-image: linear-gradient(#7B904B, #002400);
     border-radius: 20px;
     text-align: center;
@@ -838,6 +838,9 @@ input {
     margin-bottom: 2%;
     margin-left: 50px;
     margin-right: 50px;
+    color: #eee;
+    font-family: inherit;
+    font-size: 20px;
 }
 
 input::placeholder {
@@ -845,11 +848,18 @@ input::placeholder {
 	font-weight: 700;
 }
 
-.button-box:hover {
+#closeBannerr, .button-box:hover {
     transform: scale(1.2);
     box-shadow: 0 0 100px #097f25;
 
 }
+#banner{
+    background-image: linear-gradient(#98a098, #aacaaa);
+    color: #eee;
+    font-family: inherit;
+    font-size: 20px;
+}
+
 input[type = "submitEmail"] {
     width: 30%;
     margin-top: 10px; 
@@ -953,3 +963,4 @@ input[type = "submitEmail"] {
     display: inline;
     max-width: 800px;
 }
+/*banner*/
