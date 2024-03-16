@@ -18,21 +18,23 @@ document.addEventListener("DOMContentLoaded", () => {
           const temperatureKelvin = data.main.temp;
           const windSpeed = data.wind.speed;
 
-          const temperatureCelsius = temperatureKelvin - 273.15;
+          const temperatureFahrenheit = (temperatureKelvin - 273.15) * 9 / 5 + 32; 
 
           let windChill;
-          if (temperatureCelsius > 50 || windSpeed <= 3.0) {
+          if (isNaN(windSpeed) || windSpeed === 0) { 
             windChill = "N/A";
           } else {
-            const temperatureFahrenheit = (temperatureCelsius * 9 / 5) + 32;
-            const windSpeedMetersPerSecond = windSpeed;
-
-            windChill = 35.74 + 0.6215 * temperatureFahrenheit - 35.75 * Math.pow(windSpeedMetersPerSecond, 0.16) + 0.4275 * temperatureFahrenheit * Math.pow(windSpeedMetersPerSecond, 0.16);
+            if (temperatureFahrenheit <= 50 && windSpeed > 10) { 
+              const windSpeedMilesPerHour = windSpeed * 2.237; 
+              windChill = 35.74 + 0.6215 * temperatureFahrenheit - 35.75 * Math.pow(windSpeedMilesPerHour, 0.16) + 0.4275 * temperatureFahrenheit * Math.pow(windSpeedMilesPerHour, 0.16);
+            } else {
+              windChill = "N/A";
+            }
           }
 
           const weatherHTML = `
               <h3>Weather in ${location}:</h3>
-              <p>Temperature: ${temperatureCelsius.toFixed(2)}°F</p>
+              <p>Temperature: ${temperatureFahrenheit.toFixed(2)}°F</p>
               <p>Wind Chill: ${windChill === "N/A" ? "N/A" : windChill.toFixed(2)}°F</p>
               <p>Wind Speed: ${windSpeed} m/s</p>
             `;
@@ -61,9 +63,8 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     weatherInfo.innerHTML = '<p>Geolocation is not supported by your browser.</p>';
   }
-
-
 });
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -119,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       fetchWeatherForecast(lat, lon);
     }, error => {
-      weatherInfo.innerHTML = '<p>Location could not be obtained.</p>';
+      weatherInfo.innerHTML = '<p>Sorry the location could not be obtained.</p>';
     });
   } else {
     weatherInfo.innerHTML = '<p>Geolocation is not supported by your browser.</p>';
