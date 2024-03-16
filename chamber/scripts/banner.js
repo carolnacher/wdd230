@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var today = new Date();
     var dayOfWeek = today.getDay();
   
-    if (dayOfWeek >= 1 && dayOfWeek <= 3) {
+    if (dayOfWeek >= 1 && dayOfWeek <= 5) {
       banner.style.display = "block";
     }
   

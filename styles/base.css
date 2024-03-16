@@ -149,10 +149,11 @@ iframe {
     font-size: larger;
 }
 
-figure,
-figcaption #weather-iconb {
-    margin-left: 50px;
+figure {
     text-align: center;
+}
+#forecast-container{
+    height: 150px;
 }
 
 @media (max-width: 639px) {

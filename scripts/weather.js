@@ -6,7 +6,7 @@ const latitude = -34.9011;
 const longitude = -56.1645; 
 const apiKey = 'fcd7729898eb123b75c88029f79c4a20'; 
 
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
+const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
 
 async function apiFetch() {
     try {
@@ -26,10 +26,11 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let desc = data.weather[0].description;
+    currentTemp.innerHTML = `${data.list[0].main.temp}&deg;F`; 
+    const iconsrc = `https://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`; 
+    let desc = data.list[0].weather[0].description; 
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = `${desc}`;
+
 }
