@@ -98,7 +98,7 @@ a {
 }
 
 img.logo {
-    max-height: 90px;
+    max-height: 80%;
     background-color: #22181C;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -213,8 +213,8 @@ main {
 footer .social img {
     padding: 25px 10px;
     padding-bottom: 0;
-    width: 70px;
-    height: 50px;
+    width: 100%;
+    height: auto;
 }
 
 footer {
@@ -249,9 +249,9 @@ div#weatherInfo {
 }
 
 #weather-i {
-    width: 80px; 
+    width: 20%; 
     height: auto; 
-    margin-left: 190px;
+    margin-left: 40%;
 }
 figure{
     text-align: center;
@@ -445,7 +445,7 @@ section:nth-child(3) {
 /*Lazy images*/
 
 img {
-    animation: fade 10s;
+    animation: fade 5s;
 
 }
 
