@@ -976,4 +976,6 @@ input[type = "submitEmail"] {
     display: inline;
     max-width: 800px;
 }
-/*banner*/
+#forecast-container{
+    color: #eee;
+}
