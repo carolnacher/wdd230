@@ -448,7 +448,7 @@ section:nth-child(3) {
 /*Lazy images*/
 
 img {
-    animation: fade 5s;
+    animation: fade 2s;
 
 }
 
