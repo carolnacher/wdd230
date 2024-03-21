@@ -2,20 +2,20 @@
 
 
 :root {
-    /* change the values below to your colors from your palette */
+   
     --primary-color: #002400;
     --secondary-color: #DBD2E0;
     --accent1-color: #273B09;
     --accent2-color: #7B904B;
 
-    /* change the values below to your chosen font(s) */
+    
     --heading-font: Montserrat, "IM Fell French Canon SC";
     --paragraph-font: "Open Sans", Lato, Helvetica, sans-serif;
 }
 
 * {
     padding: 0;
-
+    box-sizing: border-box;
 
 }
 h1{
@@ -98,10 +98,9 @@ a {
 }
 
 img.logo {
-    max-height: 80%;
-    background-color: #22181C;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 .slider-box {
@@ -449,7 +448,6 @@ section:nth-child(3) {
 
 img {
     animation: fade 2s;
-
 }
 
 footer {
