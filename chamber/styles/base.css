@@ -261,7 +261,7 @@ figure{
     font-size: 20px;
 }
 h2 {
-    font-size: 35px;
+    
     font-family: var(--heading-font);
     text-align: center;
     font-weight: 900;
@@ -398,14 +398,16 @@ section:nth-child(3) {
 
 .info-button {
     font-family: var(--paragraph-font);
-    background-color: #DBD2E0;
-    color: #002400;
+    background-image: linear-gradient(#7B904B, #002400);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: #eee;
     border: 1px solid #002400;
     padding: 8px;
     cursor: pointer;
     margin:15px;
+    margin-bottom: 10px;
     border-radius: 8px;
-    font-size: 15px;
+    font-size: 20px;
     height: 44px;
     width: 100px;
     text-align: center;
@@ -422,6 +424,7 @@ section:nth-child(3) {
 }
 
 .social-media img {
+    margin-left: 15px;
     width: 40px;
     height: 39px;
     max-width: 100%;
@@ -484,11 +487,6 @@ footer {
     
 }
 
-#calendario img {
-    width: 100%;
-    max-width: 500px;
-
-}
 
 .Info p {
     margin-top: 0;
@@ -519,7 +517,7 @@ footer {
     margin: 35px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     padding: 10px;
-    
+    height: auto;
 }
 
 #carnival:hover {
@@ -531,19 +529,6 @@ main.page-discover {
     grid-template-columns: 1fr 1fr;
     grid-gap: 32px;
     padding: 0%;
-}
-
-
-#calendario {
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-
-#calendario img {
-    width: 100%;
-    height: auto;
-    display: block;
 }
 
 #today {
