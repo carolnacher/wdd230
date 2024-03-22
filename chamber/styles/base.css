@@ -81,7 +81,7 @@ a {
     font-family: var(--heading-font);
     font-weight: bold;
     color: #DBD2E0;
-    font-size: 36px;
+    font-size: 26px;
     text-align: right;
     align-items: center;
     padding-right: 15px;
@@ -101,6 +101,7 @@ img.logo {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     text-align: center;
+    font-size: 12px;
 }
 
 .slider-box {
@@ -146,40 +147,6 @@ img.logo {
 
 .slider-box img {
     width: 100%;
-}
-
-@keyframes slide {
-    0% {
-        margin-left: 0;
-    }
-
-    20% {
-        margin-left: 0;
-    }
-
-    25% {
-        margin-left: -100%;
-    }
-
-    45% {
-        margin-left: -100%;
-    }
-
-    50% {
-        margin-left: -200%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    75% {
-        margin-left: -300%;
-    }
-
-    100% {
-        margin-left: -300%;
-    }
 }
 
 #text p {
@@ -370,6 +337,7 @@ section:nth-child(3) {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
+    gap: 8px;
 }
 
 .box {
@@ -389,6 +357,7 @@ section:nth-child(3) {
 .box img {
     max-width: 100%;
     height: auto;
+    margin-top: 10px;
 }
 
 .box p {
@@ -472,7 +441,6 @@ footer {
 .Info {
     position: relative;
     border-radius: 8px;
-
     overflow: hidden;
 }
 
@@ -544,11 +512,11 @@ main.page-discover {
     height: auto;
     
 }
-.photo :hover{
-    filter: saturate(80%);
+.photo  :hover{
+    filter: saturate(200%);
 }
 picture :hover{
-    filter: saturate(80%);
+    filter: saturate(200%);
 }
 
 /*dark mode*/
@@ -694,6 +662,7 @@ body.dark-mode #menu::after {
     color: #042181;
     padding: 0 .5rem;
     font-weight: 700;
+    font-size: 18px;
 }
 
 .wfl label {
@@ -875,6 +844,7 @@ input[type = "submitEmail"] {
     font-family:var(--paragraph-font);
     display: block;
     align-items: center;
+    
 }
 
 .menud {
@@ -914,6 +884,7 @@ input[type = "submitEmail"] {
     box-shadow: none;
     background-color: unset;
     padding: 0;
+    
 }
 .grida {
     display: grid;
@@ -925,7 +896,6 @@ input[type = "submitEmail"] {
     border: 1px solid #fff;
     box-shadow: 0 0 10px #333;
     max-width: 200px;
-
     height: auto;
     margin: 15px;
     border-radius: 10px;
@@ -958,7 +928,21 @@ input[type = "submitEmail"] {
 .lista  ul {
     display: inline;
     max-width: 800px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    
 }
+.lista li{
+    display: contents;
+}
+
 #forecast-container{
     color: #eee;
 }
+.lista h4{
+    margin: 0;
+    
+}
+.lista ul :nth-child(even) {
+	background-color: rgb(96, 138, 124);
+}
+

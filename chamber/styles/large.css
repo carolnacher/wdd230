@@ -1,4 +1,4 @@
-@media (max-width: 639px) {
+@media (max-width: 744px) {
 
 
     .navigation.open {
@@ -159,9 +159,10 @@
         width: 50px;
 
     }
-    #map{
-        width: 100%;
-    }
+    #map {
+        max-width: 100%;
+        height: auto;
+      }
     .mapboxgl-canvas{
         align-items: center;
         width: 380px;
