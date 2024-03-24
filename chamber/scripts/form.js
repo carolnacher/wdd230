@@ -18,6 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 
-	const form = document.querySelector("form");
+	const form = document.querySelector("#email");
 	form.addEventListener("submit", handleSubmit);
 });
