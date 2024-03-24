@@ -196,7 +196,7 @@ footer {
 
 
 footer P {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #text {
@@ -214,7 +214,7 @@ div#weatherInfo {
     font-size: 20px;
 }
 
-#weather-i {
+#weather-icon {
     width: 20%; 
     height: auto; 
     margin-left: 40%;
@@ -643,13 +643,16 @@ body.dark-mode #menu::after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 .formPage {
     display: grid;
-    grid-template-columns: 1fr;
-    max-width: 800px;
-    background-color: #ffffff;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    
 }
+form{
+    display: contents;
+}
+
 
 .wfl fieldset {
     margin: 2rem 0;
@@ -658,19 +661,22 @@ body.dark-mode #menu::after {
     padding: .5rem 2%;
 }
 
+.last-fieldset {
+    grid-column: 2 / span 1;
+}
+
 .wfl legend {
-    color: #042181;
+    color: #445ba9;
     padding: 0 .5rem;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .wfl label {
     display: block;
     padding-top: 1rem;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .wfl div {
@@ -770,7 +776,6 @@ textarea {
 
 .membership-benefits ul li {
     margin-bottom: 10px;
-    color: #3c3c3c;
     font-weight: 500;
 }
 
@@ -840,7 +845,6 @@ input[type = "submitEmail"] {
     margin: 0 auto;
     padding: 0.5rem;
     max-width: 1280px;
-    background-color: #fff;
     font-family:var(--paragraph-font);
     display: block;
     align-items: center;

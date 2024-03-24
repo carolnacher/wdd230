@@ -62,96 +62,98 @@
         <main class="formPage">
 
             <form method="get" action="thankyou.html" class="wfl">
-
                 <fieldset>
-                    <legend>Application Information</legend>
-                    <label>First Name* <input type="text" name="fname" id="fname" required></label>
-                    <label>Last Name* <input type="text" name="lname" id="lname" required></label>
-                    <label> Title or position* <input type="text" name="title" id="title-position" required
-                            pattern="^[A-Za-z\s-]{7,}$"></label>
-                    <label for="email">Email:</label>
-                    <div class="email-input-container">
-                        <input type="email" id="email" name="email" placeholder="Your byui email address"
-                            title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required>
-                        <input type="submitEmail" value="Validate">
-                    </div>
-                    <label> Phone* <input type="tel" name="phone" id="phone-number" placeholder="12345678"
-                            required></label>
+                    <fieldset class="form1">
+                        <legend>Application Information</legend>
+                        <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                        <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                        <label> Title or position* <input type="text" name="title" id="title-position" required></label>
+                        <label for="email">Email:</label>
+                        <div class="email-input-container">
+                            <input type="email" id="email" name="email" placeholder="Your byui email address"
+                                title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required>
+
+                        </div>
+                        <label> Phone* <input type="tel" name="phone" id="phone-number" placeholder="12345678"
+                                required></label>
+                    </fieldset>
+                    <hr>
+                    <fieldset>
+                        <legend>Business Information</legend>
+                        <label>business/organization's name* <input type="text" name="Oname" id="Oname"
+                                required></label>
+                        <label>business/organization's description <textarea id="businessDescription"
+                                name="businessDescription"></textarea></label>
+                    </fieldset>
                 </fieldset>
-
-                <fieldset>
-                    <legend>Bysiness Information</legend>
-                    <label>business/organization's name* <input type="text" name="Oname" id="Oname" required></label>
-                    <label>business/organization's description <textarea id="businessDescription"
-                            name="businessDescription"></textarea></label>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Membership</legend>
-                    <div class="membership-options">
-                        <label><input type="radio" name="membership" value="NP">NP Membership is for non-profit
-                            organizations and there is no fee</label>
-                        <label><input type="radio" name="membership" value="Bronze">Bronze Membership</label>
-                        <label><input type="radio" name="membership" value="Silver">Silver Membership</label>
-                        <label><input type="radio" name="membership" value="Gold">Gold Membership</label>
-                    </div>
-                    <div class="membership-benefits">
-                        <div data-membership="NP">
-                            <h3>NP Membership Benefits 🥉​</h3>
-                            <ul>
-                                <li>Special events for non-profits</li>
-                                <li>Training opportunities</li>
-                                <li>Advertising support</li>
-                                <li>Discount 5%</li>
-                            </ul>
+                <div class="last-fieldset">
+                    <fieldset>
+                        <legend>Membership</legend>
+                        <div class="membership-options">
+                            <label><input type="radio" name="membership" value="NP">NP Membership is for non-profit
+                                organizations and there is no fee</label>
+                            <label><input type="radio" name="membership" value="Bronze">Bronze Membership</label>
+                            <label><input type="radio" name="membership" value="Silver">Silver Membership</label>
+                            <label><input type="radio" name="membership" value="Gold">Gold Membership</label>
                         </div>
+                        <div class="membership-benefits">
+                            <div data-membership="NP">
+                                <h3>NP Membership Benefits 🥉​</h3>
+                                <ul>
+                                    <li>Special events for non-profits</li>
+                                    <li>Training opportunities</li>
+                                    <li>Advertising support</li>
+                                    <li>Discount 5%</li>
+                                </ul>
+                            </div>
 
-                        <div data-membership="Bronze">
-                            <h3>Bronze Membership Benefits 🥈​</h3>
-                            <ul>
-                                <li>Exclusive events</li>
-                                <li>Featured positions on the homepage</li>
-                                <li>Priority access to industry reports or research</li>
-                                <li>Personalized consultation sessions with industry experts</li>
-                                <li>Networking opportunities with prominent figures in the field</li>
-                                <li>Discount 10%</li>
-                            </ul>
+                            <div data-membership="Bronze">
+                                <h3>Bronze Membership Benefits 🥈​</h3>
+                                <ul>
+                                    <li>Exclusive events</li>
+                                    <li>Featured positions on the homepage</li>
+                                    <li>Priority access to industry reports or research</li>
+                                    <li>Personalized consultation sessions with industry experts</li>
+                                    <li>Networking opportunities with prominent figures in the field</li>
+                                    <li>Discount 10%</li>
+                                </ul>
+                            </div>
+                            <div data-membership="Silver">
+                                <h3>Silver Membership Benefits 🥇​</h3>
+                                <ul>
+                                    <li>Enhanced Visibility</li>
+                                    <li>Business Advisory Services</li>
+                                    <li>Access to exclusive networking events</li>
+                                    <li>Discounted rates on professional development workshops</li>
+                                    <li>Featured spotlights in newsletters or industry publications</li>
+                                    <li>Complimentary access to educational webinars</li>
+                                    <li>Opportunities for cross-promotion with other members</li>
+                                    <li>Special offers from partner organizations</li>
+                                    <li>Discount 15%</li>
+                                </ul>
+                            </div>
+                            <div data-membership="Gold">
+                                <h3>Gold Membership Benefits 🏆​</h3>
+                                <ul>
+                                    <li>VIP Access to Events</li>
+                                    <li>Customized Marketing Campaigns</li>
+                                    <li>One-on-one consultations with industry leaders</li>
+                                    <li>Exclusive access to industry insights and trends</li>
+                                    <li>Premium customer support services</li>
+                                    <li>Complimentary tickets to high-profile industry conferences</li>
+                                    <li>Opportunities for co-branding and partnerships</li>
+                                    <li>Priority consideration for speaking opportunities at events</li>
+                                </ul>
+                            </div>
+
+
+
                         </div>
-                        <div data-membership="Silver">
-                            <h3>Silver Membership Benefits 🥇​</h3>
-                            <ul>
-                                <li>Enhanced Visibility</li>
-                                <li>Business Advisory Services</li>
-                                <li>Access to exclusive networking events</li>
-                                <li>Discounted rates on professional development workshops</li>
-                                <li>Featured spotlights in newsletters or industry publications</li>
-                                <li>Complimentary access to educational webinars</li>
-                                <li>Opportunities for cross-promotion with other members</li>
-                                <li>Special offers from partner organizations</li>
-                                <li>Discount 15%</li>
-                            </ul>
-                        </div>
-                        <div data-membership="Gold">
-                            <h3>Gold Membership Benefits 🏆​</h3>
-                            <ul>
-                                <li>VIP Access to Events</li>
-                                <li>Customized Marketing Campaigns</li>
-                                <li>One-on-one consultations with industry leaders</li>
-                                <li>Exclusive access to industry insights and trends</li>
-                                <li>Premium customer support services</li>
-                                <li>Complimentary tickets to high-profile industry conferences</li>
-                                <li>Opportunities for co-branding and partnerships</li>
-                                <li>Priority consideration for speaking opportunities at events</li>
-                            </ul>
-                        </div>
+                        <input type="hidden" name="timestamp" id="timestamp">
 
 
-
-                    </div>
-                    <input type="hidden" name="timestamp" id="timestamp">
-
-
-                </fieldset>
+                    </fieldset>
+                </div>
 
                 <input type="submit" value="Send">
 

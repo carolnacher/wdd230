@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const location = data.name;
           const temperatureKelvin = data.main.temp;
           const windSpeed = data.wind.speed;
+          const weatherIcon = data.weather[0].icon;
 
           const temperatureFahrenheit = (temperatureKelvin - 273.15) * 9 / 5 + 32; 
 
@@ -37,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <p>Temperature: ${temperatureFahrenheit.toFixed(2)}°F</p>
               <p>Wind Chill: ${windChill === "N/A" ? "N/A" : windChill.toFixed(2)}°F</p>
               <p>Wind Speed: ${windSpeed} m/s</p>
+              <img id="weather-icon" src="https://openweathermap.org/img/w/${weatherIcon}.png" alt="Weather icon">
             `;
 
           map = new mapboxgl.Map({
