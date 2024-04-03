@@ -70,6 +70,9 @@
     <section>
       <h1> Montevideo - Chamber of Commerce </h1>
     </section>
+    <div class='button-box'>
+      <a class='book' href="join.html">Join us!!</a>
+    </div>
     <div class="hero">
       <picture>
         <source srcset="images/monteS.webp" media="(max-width: 400px)">
@@ -84,8 +87,17 @@
         <div class="gallery">
           <h2>Weather information</h2>
           <div id="weatherInfo"></div>
-          <div id="windchill"></div>
-        
+          <h1>Wind Chill Calculator</h1>
+          <form id="windChillForm">
+            <label for="temperature">Temperature °F:</label>
+            <input type="number" id="temperature" name="temperature" required>
+            <br>
+            <label for="windSpeed">Wind Speed :</label>
+            <input type="number" id="windSpeed" name="windSpeed" required>
+            <br>
+            <button id="wcalculate" type="button">Calculate Wind Chill</button>
+          </form>
+          <div id="windChillResult"></div>
           <div id="forecast-container"></div>
 
           <h2>Map</h2>
@@ -106,24 +118,21 @@
 
       <section class="responsive">
         <div class="box" id="Contact-one">
-          <img src="images/fletes.webp" alt="logo-transport">
-          <p>+589 95 463 177</p>
-          <p>+589 2356 1836</p>
-          <p>Bvar José Batlle y Ordóñez 7139</p>
-          <a href="https://fletes-uruguay.com/?gclid=CjwKCAiAt5euBhB9EiwAdkXWOwoma2USFIeN4AXJHclRuWAGLcu4NoXj5hlb0JzqEwUjShMmnBKo7xoCHSMQAvD_BwE"
+          <img src="images/rock.webp" alt="logo-commers">
+          <p>Cosquín Rock 2023:</p>
+          <p>How to get tickets?</p>
+          <a href="https://www.cronista.com/clase/trendy/cosquin-rock-2023-cuales-son-las-fechas-y-como-conseguir-entradas/"
             class="info-button">+ Info</a>
         </div>
         <div class="box" id="contact-two">
-          <img src="images/contuction.webp" alt="logo-contruct">
-          <p>fax +598 2509 2509</p>
-          <p>Av. 8 de Octubre 4489</p>
-          <a href="https://www.gonzalezconde.com.uy/contacto/" class="info-button">+ Info</a>
+          <img src="images/ine.webp" alt="logo-capatition">
+          <p>Know your opportunities</p>
+          <a href="https://www.inefop.uy/" class="info-button">+ Info</a>
         </div>
         <div class="box" id="Contact-three">
-          <img src="images/travel.webp" alt="logo-travel">
-          <p>+598 2904 04 15</p>
-          <p> Av. Italia 5820</p>
-          <a href="https://www.gonzalezconde.com.uy/contacto/" class="info-button">+ Info</a>
+          <img src="images/cantera.webp" alt="logo-event">
+          <p>Various shows in the quarries</p>
+          <a href="https://ra.co/events/157696" class="info-button">+ Info</a>
         </div>
       </section>
 

@@ -195,10 +195,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        text-align-last: center;
     }
 
     .formPage {
         display: block;
     }
+    
 }

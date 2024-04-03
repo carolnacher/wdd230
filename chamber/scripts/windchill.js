@@ -15,29 +15,29 @@ document.addEventListener("DOMContentLoaded", () => {
         .then((response) => response.json())
         .then((data) => {
           const location = data.name;
-          const temperatureKelvin = data.main.temp;
+          const temperatureFahrenheit = data.main.temp;
           const windSpeed = data.wind.speed;
           const weatherIcon = data.weather[0].icon;
 
-          const temperatureFahrenheit = (temperatureKelvin - 273.15) * 9 / 5 + 32; 
+          const temperatureFahrenheitRounded = Math.round(temperatureFahrenheit);
+          const windSpeedRounded = Math.round(windSpeed);
 
           let windChill;
           if (isNaN(windSpeed) || windSpeed === 0) { 
             windChill = "N/A";
-          } else {
+        } else {
             if (temperatureFahrenheit <= 50 && windSpeed > 10) { 
-              const windSpeedMilesPerHour = windSpeed * 2.237; 
-              windChill = 35.74 + 0.6215 * temperatureFahrenheit - 35.75 * Math.pow(windSpeedMilesPerHour, 0.16) + 0.4275 * temperatureFahrenheit * Math.pow(windSpeedMilesPerHour, 0.16);
+                const windSpeedMilesPerHour = windSpeed * 2.237; 
+                windChill = Math.round(35.74 + 0.6215 * temperatureFahrenheit - 35.75 * Math.pow(windSpeedMilesPerHour, 0.16) + 0.4275 * temperatureFahrenheit * Math.pow(windSpeedMilesPerHour, 0.16));
             } else {
-              windChill = "N/A";
+                windChill = "N/A";
             }
-          }
+        }
 
           const weatherHTML = `
               <h3>Weather in ${location}:</h3>
-              <p>Temperature: ${temperatureFahrenheit.toFixed(2)}°F</p>
-              <p>Wind Chill: ${windChill === "N/A" ? "N/A" : windChill.toFixed(2)}°F</p>
-              <p>Wind Speed: ${windSpeed} m/s</p>
+              <p>Temperature: ${temperatureFahrenheitRounded}°F</p>
+              <p>Wind Speed: ${windSpeedRounded} m/s</p>
               <img id="weather-icon" src="https://openweathermap.org/img/w/${weatherIcon}.png" alt="Weather icon">
             `;
 
@@ -65,66 +65,25 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     weatherInfo.innerHTML = '<p>Geolocation is not supported by your browser.</p>';
   }
+  const calculateButton = document.getElementById('wcalculate');
+  calculateButton.addEventListener('click', calculateWindChill);
 });
+function calculateWindChill() {
+  const temperatureInput = document.getElementById('temperature');
+  const windSpeedInput = document.getElementById('windSpeed');
+  const temperatureFahrenheit = parseFloat(temperatureInput.value);
+  const windSpeedMph = parseFloat(windSpeedInput.value);
 
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const apiKey = '3a37a3284cd6ada8f22e44e46aeb2fdc';
-  const weatherInfo = document.getElementById('weatherInfo');
-
-  mapboxgl.accessToken = 'pk.eyJ1IjoiYnJ1bm9wYW56YWNjaGkiLCJhIjoiY2xvM2oyZG9mMGZoYjJ3dGR1eXNkZGQzdyJ9.MaO03BaJJRwPI6VT5x-hBw';
-
- 
-  async function fetchWeatherForecast(latitude, longitude) {
-    const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
-    try {
-      const response = await fetch(url);
-      if (response.ok) {
-        const data = await response.json();
-        console.log(data);
-        displayForecast(data);
-      } else {
-        throw Error(await response.text());
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
-
-  function displayForecast(data) {
-    const forecastContainer = document.getElementById('forecast-container');
-    forecastContainer.innerHTML = '';
-
-    const today = new Date();
-    const currentDayIndex = today.getDay(); 
-    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
-    
-    for (let i = 0; i < 3; i++) {
-      const nextDayIndex = (currentDayIndex + i) % 7; 
-      const nextDay = daysOfWeek[nextDayIndex];
-      const temperatureFahrenheit = ((data.list[i].main.temp - 273.15) * 9 / 5) + 32;
-
-      const forecastElement = document.createElement('div');
-      forecastElement.innerHTML = `${nextDay}: ${temperatureFahrenheit.toFixed(2)}°F`;
-
-      forecastContainer.appendChild(forecastElement);
-    }
-  }
-
-
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(position => {
-      const lat = position.coords.latitude;
-      const lon = position.coords.longitude;
-
-      fetchWeatherForecast(lat, lon);
-    }, error => {
-      weatherInfo.innerHTML = '<p>Sorry the location could not be obtained.</p>';
-    });
+  let windChill;
+  if (isNaN(temperatureFahrenheit) || isNaN(windSpeedMph)) {
+    windChill = "N/A";
   } else {
-    weatherInfo.innerHTML = '<p>Geolocation is not supported by your browser.</p>';
+    if (temperatureFahrenheit <= 50 && windSpeedMph > 10) {
+      windChill = Math.round(35.74 + 0.6215 * temperatureFahrenheit - 35.75 * Math.pow(windSpeedMph, 0.16) + 0.4275 * temperatureFahrenheit * Math.pow(windSpeedMph, 0.16));
+    } else {
+      windChill = "N/A";
+    }
   }
-});
+  const windChillResultElement = document.getElementById('windChillResult');
+  windChillResultElement.textContent = `Wind Chill: ${windChill}`;
+}
